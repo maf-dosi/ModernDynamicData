@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.23107.0
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{CF6FA518-02BF-47D8-A017-1932A351D1B9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{B81BFD3E-54A0-4BDD-9746-DD96C24EDDB9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "build", "build", "{51160D2D-8D48-45CC-8FA8-6CC6C371B0A0}"
+EndProject
+Project("{8BB2217D-0F2D-49D1-97BC-3654ED321F3B}") = "ModernDynamicData.Host.Web", "src\ModernDynamicData.Host.Web\ModernDynamicData.Host.Web.xproj", "{ABE6E6D5-588B-4C2C-BC81-25C933532095}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{ABE6E6D5-588B-4C2C-BC81-25C933532095}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABE6E6D5-588B-4C2C-BC81-25C933532095}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABE6E6D5-588B-4C2C-BC81-25C933532095}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABE6E6D5-588B-4C2C-BC81-25C933532095}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{ABE6E6D5-588B-4C2C-BC81-25C933532095} = {CF6FA518-02BF-47D8-A017-1932A351D1B9}
+	EndGlobalSection
+EndGlobal
