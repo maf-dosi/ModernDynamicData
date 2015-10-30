@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNet.Builder;
+using Microsoft.AspNet.Diagnostics.Entity;
 using Microsoft.AspNet.Hosting;
 using Microsoft.Dnx.Runtime;
 using Microsoft.Framework.Configuration;
@@ -24,6 +25,10 @@ namespace ModernDynamicData.Host.Web
         // This method gets called by the runtime.
         public void ConfigureServices(IServiceCollection services)
         {
+            // Add Entity Framework services to the services container.
+            services.AddEntityFramework()
+                .AddSqlServer();
+
             // Add MVC services to the services container.
             services.AddMvc();
 
@@ -37,6 +42,7 @@ namespace ModernDynamicData.Host.Web
         {
             loggerFactory.MinimumLevel = LogLevel.Information;
             loggerFactory.AddConsole();
+            loggerFactory.AddDebug();
 
             // Configure the HTTP request pipeline.
 
@@ -45,6 +51,7 @@ namespace ModernDynamicData.Host.Web
             {
                 app.UseBrowserLink();
                 app.UseDeveloperExceptionPage();
+                app.UseDatabaseErrorPage(DatabaseErrorPageOptions.ShowAll);
             }
             else
             {
@@ -52,6 +59,9 @@ namespace ModernDynamicData.Host.Web
                 // send the request to the following path or controller action.
                 app.UseExceptionHandler("/Home/Error");
             }
+
+            // Add the platform handler to the request pipeline.
+            app.UseIISPlatformHandler();
 
             // Add static files to the request pipeline.
             app.UseStaticFiles();

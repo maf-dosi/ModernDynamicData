@@ -1,6 +1,6 @@
 ﻿module.exports = function () {
     var project = require("./project.json");
-    var bowerProperties = { "directory": "../../artifacts/bower_components" };
+    var bowerProperties = { "directory": "bower_components/" };
     var extensions = {
         js: ".min*.{js,map}",
         css: ".css"
