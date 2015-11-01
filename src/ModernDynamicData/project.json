@@ -1,10 +1,16 @@
 ﻿{
   "version": "1.0.0-*",
-  "description": "ModernDynamicData.Abstractions Class Library",
+  "description": "ModernDynamicData Class Library",
   "authors": [ "mgrosperrin" ],
   "tags": [ "" ],
   "projectUrl": "",
   "licenseUrl": "",
+  "dependencies": {
+    "ModernDynamicData.Abstractions": "",
+    "Microsoft.Framework.DependencyInjection": "1.0.0-beta8",
+    "Microsoft.AspNet.Mvc": "6.0.0-beta8",
+    "Microsoft.AspNet.FileProviders.Embedded": "1.0.0-beta8"
+  },
   "repository": {
     "type": "git",
     "url": "git://github.com/maf-dosi/ModernDynamicData"
