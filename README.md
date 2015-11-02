@@ -1,2 +1,2 @@
 # ModernDynamicData
-Dynamic Data with modern tehcnologies
+Dynamic Data with modern technologies
