@@ -15,7 +15,10 @@
     "type": "git",
     "url": "git://github.com/maf-dosi/ModernDynamicData"
   },
-
+  "resourceFiles": [
+    "Views/DataModel/Detail.cshtml",
+    "Views/DataModel/List.cshtml"
+  ],
   "frameworks": {
     "dnx451": { },
     "dnxcore50": {

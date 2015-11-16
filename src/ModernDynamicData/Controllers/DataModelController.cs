@@ -9,8 +9,12 @@ namespace ModernDynamicData.Controllers
             : base(dataModelDescriptorProvider)
         { }
 
-        public IActionResult List() => Empty();
+        public IActionResult List() => View(DataModelDescriptorProvider.GetAllDataModelDescriptors());
 
-        public IActionResult Detail(string dataModel) => Empty();
+        public IActionResult Detail(string dataModel)
+        {
+            var dataModelDescriptor = DataModelDescriptorProvider.GetDataModelDescriptorByName(dataModel);
+            return View(dataModelDescriptor);
+        }
     }
 }

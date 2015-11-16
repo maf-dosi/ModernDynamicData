@@ -20,7 +20,7 @@ namespace Microsoft.Framework.DependencyInjection
             services.Configure<RazorViewEngineOptions>(options =>
                 options.FileProvider = new ListOfFileProvider(
                     options.FileProvider,
-                    new EmbeddedFileProvider(typeof (Guard).GetTypeInfo().Assembly, nameof(ModernDynamicData.Views))
+                    new EmbeddedFileProvider(typeof (Guard).GetTypeInfo().Assembly, nameof(ModernDynamicData))
                     )
                 );
         }

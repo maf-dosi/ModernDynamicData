@@ -27,7 +27,7 @@ namespace ModernDynamicData.Providers
             Guard.NotNull(dataModelDescriptor, nameof(dataModelDescriptor));
 
             var dataModelName = dataModelDescriptor.DataModelName;
-            if (_dataModelDescriptors.ContainsKey(dataModelName))
+            if (!_dataModelDescriptors.ContainsKey(dataModelName))
             {
                 _dataModelDescriptors.Add(dataModelName, dataModelDescriptor);
             }

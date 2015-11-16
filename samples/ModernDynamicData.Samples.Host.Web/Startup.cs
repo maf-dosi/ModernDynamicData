@@ -1,6 +1,7 @@
 ﻿using System;
 using Microsoft.AspNet.Builder;
 using Microsoft.Framework.DependencyInjection;
+using ModernDynamicData.Samples.Host.Web.DataProvider;
 
 namespace ModernDynamicData.Samples.Host.Web
 {
@@ -17,7 +18,8 @@ namespace ModernDynamicData.Samples.Host.Web
             // Add the platform handler to the request pipeline.
             app.UseIISPlatformHandler();
 
-            app.RunDynamicData(serviceProvider);
+            app.RunDynamicData(serviceProvider, new FakeDataModelDescriptor("Test"),
+                new FakeDataModelDescriptor("Test2"));
         }
     }
 }
