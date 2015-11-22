@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNet.FileProviders;
-using Microsoft.Framework.Primitives;
+using Microsoft.Extensions.Primitives;
 
 namespace ModernDynamicData.Infrastructure
 {

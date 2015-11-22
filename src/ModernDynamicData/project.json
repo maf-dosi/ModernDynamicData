@@ -1,16 +1,25 @@
 ﻿{
-  "version": "1.0.0-*",
-  "description": "ModernDynamicData Class Library",
   "authors": [ "mgrosperrin" ],
-  "tags": [ "" ],
-  "projectUrl": "",
-  "licenseUrl": "",
   "dependencies": {
     "ModernDynamicData.Abstractions": "",
-    "Microsoft.Framework.DependencyInjection": "1.0.0-beta8",
-    "Microsoft.AspNet.Mvc": "6.0.0-beta8",
-    "Microsoft.AspNet.FileProviders.Embedded": "1.0.0-beta8"
+    "Microsoft.Extensions.DependencyInjection": "1.0.0-rc1-final",
+    "Microsoft.AspNet.Mvc": "6.0.0-rc1-final",
+    "Microsoft.AspNet.FileProviders.Embedded": "1.0.0-rc1-final",
+    "Microsoft.CSharp": "4.0.1-beta-23516",
+    "System.Collections": "4.0.11-beta-23516",
+    "System.Linq": "4.0.1-beta-23516",
+    "System.Runtime": "4.0.21-beta-23516"
   },
+  "description": "ModernDynamicData Class Library",
+  "frameworks": {
+    "dnx451": { },
+    "dnxcore50": {
+      "dependencies": {
+      }
+    }
+  },
+  "licenseUrl": "",
+  "projectUrl": "",
   "repository": {
     "type": "git",
     "url": "git://github.com/maf-dosi/ModernDynamicData"
@@ -19,16 +28,6 @@
     "Views/DataModel/Detail.cshtml",
     "Views/DataModel/List.cshtml"
   ],
-  "frameworks": {
-    "dnx451": { },
-    "dnxcore50": {
-      "dependencies": {
-        "Microsoft.CSharp": "4.0.1-beta-23409",
-        "System.Collections": "4.0.11-beta-23409",
-        "System.Linq": "4.0.1-beta-23409",
-        "System.Runtime": "4.0.21-beta-23409",
-        "System.Threading": "4.0.11-beta-23409"
-      }
-    }
-  }
+  "tags": [ "" ],
+  "version": "1.0.0-*"
 }

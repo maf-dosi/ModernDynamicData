@@ -4,6 +4,7 @@ using Microsoft.AspNet.Mvc.Razor;
 using ModernDynamicData;
 using ModernDynamicData.Infrastructure;
 using ModernDynamicData.Providers;
+using Microsoft.Extensions.DependencyInjection;
 
 // ReSharper disable once CheckNamespace
 

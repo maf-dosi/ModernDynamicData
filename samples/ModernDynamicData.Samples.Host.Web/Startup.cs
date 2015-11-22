@@ -2,6 +2,7 @@
 using Microsoft.AspNet.Builder;
 using Microsoft.Framework.DependencyInjection;
 using ModernDynamicData.Samples.Host.Web.DataProvider;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace ModernDynamicData.Samples.Host.Web
 {
