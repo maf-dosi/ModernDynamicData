@@ -1,10 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
 using ModernDynamicData.Abstractions.DataProviders;
 
-namespace ModernDynamicData.Providers
+namespace ModernDynamicData.Host.Web.Providers
 {
-    public class DataModelDescriptorProvider: IDataModelDescriptorProvider
+    public class DataModelDescriptorProvider : IDataModelDescriptorProvider
     {
         private readonly Dictionary<string, DataModelDescriptor> _dataModelDescriptors = new Dictionary<string, DataModelDescriptor>(StringComparer.Ordinal);
         public int GetNumberOfDataModelDescriptors() => _dataModelDescriptors.Count;

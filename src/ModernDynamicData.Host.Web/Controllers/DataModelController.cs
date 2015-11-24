@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNet.Mvc;
-using ModernDynamicData.Providers;
+using ModernDynamicData.Host.Web.Providers;
 
-namespace ModernDynamicData.Controllers
+// For more information on enabling MVC for empty projects, visit http://go.microsoft.com/fwlink/?LinkID=397860
+
+namespace ModernDynamicData.Host.Web.Controllers
 {
     public class DataModelController : DynamicDataControllerBase
     {

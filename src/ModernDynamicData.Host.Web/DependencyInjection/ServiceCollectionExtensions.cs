@@ -1,14 +1,11 @@
 ﻿using System.Reflection;
 using Microsoft.AspNet.FileProviders;
 using Microsoft.AspNet.Mvc.Razor;
-using ModernDynamicData;
-using ModernDynamicData.Infrastructure;
-using ModernDynamicData.Providers;
 using Microsoft.Extensions.DependencyInjection;
+using ModernDynamicData.Host.Web.Infrastructure;
+using ModernDynamicData.Host.Web.Providers;
 
-// ReSharper disable once CheckNamespace
-
-namespace Microsoft.Framework.DependencyInjection
+namespace ModernDynamicData.Host.Web.DependencyInjection
 {
     public static class ServiceCollectionExtensions
     {
@@ -21,7 +18,7 @@ namespace Microsoft.Framework.DependencyInjection
             services.Configure<RazorViewEngineOptions>(options =>
                 options.FileProvider = new ListOfFileProvider(
                     options.FileProvider,
-                    new EmbeddedFileProvider(typeof (Guard).GetTypeInfo().Assembly, nameof(ModernDynamicData))
+                    new EmbeddedFileProvider(typeof(Guard).GetTypeInfo().Assembly, nameof(ModernDynamicData))
                     )
                 );
         }

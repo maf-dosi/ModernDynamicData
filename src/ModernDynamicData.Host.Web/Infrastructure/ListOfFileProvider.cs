@@ -2,7 +2,7 @@
 using Microsoft.AspNet.FileProviders;
 using Microsoft.Extensions.Primitives;
 
-namespace ModernDynamicData.Infrastructure
+namespace ModernDynamicData.Host.Web.Infrastructure
 {
     public class ListOfFileProvider : IFileProvider
     {

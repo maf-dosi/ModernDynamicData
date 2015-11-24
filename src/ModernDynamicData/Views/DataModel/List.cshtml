@@ -1,0 +1,16 @@
+﻿@model IEnumerable<ModernDynamicData.Abstractions.DataProviders.DataModelDescriptor>
+
+<html>
+<head>
+    <title>DataModel</title>
+</head>
+<body>
+    <h1>Data Model liste</h1>
+    <ul>
+        @foreach (var dataModel in Model)
+        {
+            <li>@dataModel.DataModelName</li>
+        }
+    </ul>
+</body>
+</html>

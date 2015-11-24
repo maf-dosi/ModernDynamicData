@@ -1,9 +1,11 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
+using Microsoft.AspNet.Builder;
 using ModernDynamicData.Abstractions.DataProviders;
 
-// ReSharper disable once CheckNamespace
-namespace Microsoft.AspNet.Builder
+namespace ModernDynamicData.Host.Web.DependencyInjection
 {
     public static class ApplicationBuilderExtensions
     {
@@ -29,15 +31,15 @@ namespace Microsoft.AspNet.Builder
 
             applicationBuilder.UseMvc(routes =>
             {
-                routes.MapRoute("tableList", dataModelPrefix + "{table}", new {controller = "Table", action = "Detail", dataModel = dataModelDefault});
+                routes.MapRoute("tableList", dataModelPrefix + "{table}", new { controller = "Table", action = "Detail", dataModel = dataModelDefault });
                 if (numberOfDataModelDescriptors == 1)
                 {
-                    routes.MapRoute("context", "", new {controller = "DataModel", action = "Detail", dataModel = dataModelDefault});
+                    routes.MapRoute("context", "", new { controller = "DataModel", action = "Detail", dataModel = dataModelDefault });
                 }
                 else
                 {
-                    routes.MapRoute("contextDetail", "{dataModel}", new {controller = "DataModel", action = "Detail"});
-                    routes.MapRoute("context", "", new {controller = "DataModel", action = "List"});
+                    routes.MapRoute("contextDetail", "{dataModel}", new { controller = "DataModel", action = "Detail" });
+                    routes.MapRoute("context", "", new { controller = "DataModel", action = "List" });
                 }
             }
                 );
