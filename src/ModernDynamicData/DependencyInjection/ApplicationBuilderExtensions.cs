@@ -1,6 +1,12 @@
 ﻿using System;
 using System.Linq;
+using System.Reflection;
+using Microsoft.AspNet.StaticFiles;
 using ModernDynamicData.Abstractions.DataProviders;
+using Microsoft.AspNet.Hosting;
+using ModernDynamicData.Infrastructure;
+using Microsoft.AspNet.FileProviders;
+using ModernDynamicData;
 
 // ReSharper disable once CheckNamespace
 namespace Microsoft.AspNet.Builder
@@ -26,6 +32,15 @@ namespace Microsoft.AspNet.Builder
                 dataModelPrefix = "";
                 dataModelDefault = dataModelDescriptors.Single().DataModelName;
             }
+            var hostingEnvironment = serviceProvider.GetService(typeof(IHostingEnvironment)) as IHostingEnvironment;
+            applicationBuilder.UseStaticFiles(new StaticFileOptions
+            {
+                FileProvider =
+                new ListOfFileProvider(
+                hostingEnvironment.WebRootFileProvider,
+                new EmbeddedFileProvider(typeof(Guard).GetTypeInfo().Assembly, nameof(ModernDynamicData) + "wwwroot")
+                )
+            });
 
             applicationBuilder.UseMvc(routes =>
             {

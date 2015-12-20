@@ -8,7 +8,8 @@
     "Microsoft.CSharp": "4.0.1-beta-23516",
     "System.Collections": "4.0.11-beta-23516",
     "System.Linq": "4.0.1-beta-23516",
-    "System.Runtime": "4.0.21-beta-23516"
+    "System.Runtime": "4.0.21-beta-23516",
+    "Microsoft.AspNet.StaticFiles": "1.0.0-rc1-final"
   },
   "description": "ModernDynamicData Class Library",
   "frameworks": {
@@ -18,6 +19,11 @@
       }
     }
   },
+  "exclude": [
+    "wwwroot",
+    "node_modules",
+    "bower_components"
+  ],
   "licenseUrl": "",
   "projectUrl": "",
   "repository": {
@@ -26,7 +32,8 @@
   },
   "resourceFiles": [
     "Views/DataModel/Detail.cshtml",
-    "Views/DataModel/List.cshtml"
+    "Views/DataModel/List.cshtml",
+    "wwwroot/scripts/jquery.js"
   ],
   "tags": [ "" ],
   "version": "1.0.0-*"
