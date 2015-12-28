@@ -1,4 +1,4 @@
-﻿/// <binding AfterBuild='compileLess, compileTypescript, copy' Clean='clean' ProjectOpened='restore, onOpen' />
+/// <binding BeforeBuild='build' Clean='clean' ProjectOpened='restore, onOpen' />
 var gulp = require("gulp"),
     $ = require("gulp-load-plugins")({ lazy: true }),
     args = require("yargs").argv,
@@ -12,13 +12,16 @@ var config = require("./gulpfile.config")();
 var taskNames = {
     build: "build",
     cleanFonts: "clean:fonts",
+    cleanImages: "clean:images",
     cleanScripts: "clean:scripts",
     cleanStyles: "clean:styles",
     clean: "clean",
     compileLess: "compile:less",
     compileTypescript: "compile:typescript",
     compile: "compile",
+    copyFavicon: "copy:favicon",
     copyFonts: "copy:fonts",
+    copyImages: "copy:images",
     copyScripts: "copy:scripts",
     copyStyles: "copy:styles",
     copy: "copy",
@@ -31,13 +34,16 @@ var taskNames = {
 gulp.task(taskNames.cleanFonts, function (done) {
     del([].concat(config.paths.output.fonts.folder), done);
 });
+gulp.task(taskNames.cleanImages, function (done) {
+    del([].concat(config.paths.output.images.favicon, config.paths.output.images.folder), done);
+});
 gulp.task(taskNames.cleanScripts, function (done) {
     del([].concat(config.paths.output.scripts.folder), done);
 });
 gulp.task(taskNames.cleanStyles, function (done) {
     del([].concat(config.paths.output.styles.folder), done);
 });
-gulp.task(taskNames.clean, [taskNames.cleanFonts, taskNames.cleanScripts, taskNames.cleanStyles]);
+gulp.task(taskNames.clean, [taskNames.cleanFonts, taskNames.cleanImages, taskNames.cleanScripts, taskNames.cleanStyles]);
 
 gulp.task(taskNames.restoreTypescriptDefinitions, function (done) {
     $.tsd(config.tsdRestore, done);
@@ -73,19 +79,28 @@ gulp.task(taskNames.compileTypescript, [taskNames.restoreTypescriptDefinitions],
 });
 gulp.task(taskNames.compile, [taskNames.compileLess, taskNames.compileTypescript]);
 
+gulp.task(taskNames.copyFavicon, [taskNames.restoreBowerComponents], function () {
+    var faviconFile = [].concat(config.paths.input.sources.images.files.favicon);
+    return copyFiles(faviconFile, config.paths.output.root);
+});
 gulp.task(taskNames.copyFonts, [taskNames.restoreBowerComponents], function () {
     var fontFiles = [].concat(config.paths.input.librairies.bootstrap.files.fonts);
     return copyFiles(fontFiles, config.paths.output.fonts.folder);
 });
+gulp.task(taskNames.copyImages, function () {
+    var imagesFiles = [].concat(config.paths.input.sources.images.files.all);
+    return copyFiles(imagesFiles, config.paths.output.images.folder);
+});
 gulp.task(taskNames.copyScripts, [taskNames.restoreBowerComponents], function () {
-    var scriptFiles = [].concat(config.paths.input.librairies.jquery.files.javascript);
+    var scriptFiles = [].concat(config.paths.input.librairies.jquery.files.javascript,
+        config.paths.input.librairies.bootstrap.files.javascript);
     return copyFiles(scriptFiles, config.paths.output.scripts.folder);
 });
 gulp.task(taskNames.copyStyles, [taskNames.restoreBowerComponents], function () {
     var styleFiles = [].concat();
     return copyFiles(styleFiles, config.paths.output.styles.folder);
 });
-gulp.task(taskNames.copy, [taskNames.copyFonts, taskNames.copyScripts, taskNames.copyStyles]);
+gulp.task(taskNames.copy, [taskNames.copyFavicon, taskNames.copyFonts, taskNames.copyImages, taskNames.copyScripts, taskNames.copyStyles]);
 
 gulp.task(taskNames.build, function (done) {
     runSequence(taskNames.clean,

@@ -19,6 +19,12 @@
                 folder: bowerFolder
             },
             sources: {
+                images: {
+                    files: {
+                        favicon: "Images/favicon.ico",
+                        all: "Images/**/*.*"
+                    }
+                },
                 less: {
                     all: "Styles/**/*.less",
                     folder: "Styles/",
@@ -59,6 +65,11 @@
             fonts: {
                 folder: "./" + webRoot + "/fonts/"
             },
+            images: {
+                favicon: "./" + webRoot + "/favicon.ico",
+                folder: "./" + webRoot + "/images/"
+            },
+            root: "./" + webRoot,
             scripts: {
                 fileName: "app.js",
                 folder: "./" + webRoot + "/scripts/"

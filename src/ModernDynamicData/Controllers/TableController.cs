@@ -9,6 +9,8 @@ namespace ModernDynamicData.Controllers
             : base(dataModelDescriptorProvider)
         { }
 
-        public IActionResult Detail(string dataModel, string table) => Empty();
+        public IActionResult View(string dataModel, string table) => Empty();
+        public IActionResult Edit(string dataModel, string table) => Empty();
+        public IActionResult AddItem(string dataModel, string table) => Empty();
     }
 }
