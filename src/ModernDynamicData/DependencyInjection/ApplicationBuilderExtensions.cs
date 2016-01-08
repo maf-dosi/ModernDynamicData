@@ -1,6 +1,13 @@
 ﻿using System;
 using System.Linq;
+using System.Reflection;
+using Microsoft.AspNet.StaticFiles;
 using ModernDynamicData.Abstractions.DataProviders;
+using Microsoft.AspNet.Hosting;
+using ModernDynamicData.Infrastructure;
+using Microsoft.AspNet.FileProviders;
+using Microsoft.AspNet.Routing;
+using ModernDynamicData;
 
 // ReSharper disable once CheckNamespace
 namespace Microsoft.AspNet.Builder
@@ -26,23 +33,34 @@ namespace Microsoft.AspNet.Builder
                 dataModelPrefix = "";
                 dataModelDefault = dataModelDescriptors.Single().DataModelName;
             }
-
-            applicationBuilder.UseMvc(routes =>
+            var hostingEnvironment = (IHostingEnvironment)serviceProvider.GetService(typeof(IHostingEnvironment));
+            applicationBuilder.UseStaticFiles(new StaticFileOptions
             {
-                routes.MapRoute("tableList", dataModelPrefix + "{table}", new {controller = "Table", action = "Detail", dataModel = dataModelDefault});
-                if (numberOfDataModelDescriptors == 1)
-                {
-                    routes.MapRoute("context", "", new {controller = "DataModel", action = "Detail", dataModel = dataModelDefault});
-                }
-                else
-                {
-                    routes.MapRoute("contextDetail", "{dataModel}", new {controller = "DataModel", action = "Detail"});
-                    routes.MapRoute("context", "", new {controller = "DataModel", action = "List"});
-                }
-            }
-                );
+                FileProvider =
+                new ListOfFileProvider(
+                    hostingEnvironment.WebRootFileProvider,
+                    new EmbeddedFileProvider(typeof(Guard).GetTypeInfo().Assembly, nameof(ModernDynamicData) + ".wwwroot")
+                )
+            });
+
+            applicationBuilder.UseMvc(routes => ConfigureRoutes(routes, dataModelPrefix, dataModelDefault, numberOfDataModelDescriptors));
 
             return applicationBuilder;
+        }
+
+        private static void ConfigureRoutes(IRouteBuilder routeBuilder, string dataModelPrefix, string dataModelDefault, int numberOfDataModelDescriptors)
+        {
+            routeBuilder.MapRoute(Constants.Routes.Table, dataModelPrefix + "{action}/{table}", new { controller = "Table", dataModel = dataModelDefault });
+
+            if (numberOfDataModelDescriptors == 1)
+            {
+                routeBuilder.MapRoute("context", "", new { controller = "DataModel", action = "Detail", dataModel = dataModelDefault });
+            }
+            else
+            {
+                routeBuilder.MapRoute(Constants.Routes.ContextDetail, "{dataModel}", new { controller = "DataModel", action = "Detail" });
+                routeBuilder.MapRoute("context", "", new { controller = "DataModel", action = "List" });
+            }
         }
     }
 }

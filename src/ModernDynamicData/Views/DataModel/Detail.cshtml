@@ -1,11 +1,18 @@
-﻿@model ModernDynamicData.Abstractions.DataProviders.DataModelDescriptor
+﻿@using ModernDynamicData
+@using ModernDynamicData.ViewModels.DataModel
+@model DetailViewModel
 
-<html>
-<head>
-    <title>DataModel</title>
-</head>
-<body>
-    <h1>Data Model détail</h1>
-    <h2>@Model.DataModelName</h2>
-</body>
-</html>
+<h1>@Model.DataModel.DataModelName</h1>
+<h2>Table list</h2>
+<table class="table table-hover">
+    <tbody>
+    @foreach (var table in Model.DataModel.Tables)
+    {
+        <tr>
+            <td>
+                @table.Name
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using Microsoft.AspNet.FileProviders;
 using Microsoft.Extensions.Primitives;
+using System.Diagnostics;
 
 namespace ModernDynamicData.Infrastructure
 {
@@ -15,6 +16,7 @@ namespace ModernDynamicData.Infrastructure
 
         public IFileInfo GetFileInfo(string subpath)
         {
+            Debug.WriteLine(nameof(GetFileInfo) + ":" + subpath);
             IFileInfo fileInfo = null;
             foreach (var fileProvider in _fileProviders)
             {
@@ -29,6 +31,7 @@ namespace ModernDynamicData.Infrastructure
 
         public IDirectoryContents GetDirectoryContents(string subpath)
         {
+            Debug.WriteLine(nameof(GetDirectoryContents) + ":" + subpath);
             IDirectoryContents directoryContents = null;
             foreach (var fileProvider in _fileProviders)
             {

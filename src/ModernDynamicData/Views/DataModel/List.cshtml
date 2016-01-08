@@ -1,16 +1,13 @@
-﻿@model IEnumerable<ModernDynamicData.Abstractions.DataProviders.DataModelDescriptor>
-
-<html>
-<head>
-    <title>DataModel</title>
-</head>
-<body>
-    <h1>Data Model liste</h1>
-    <ul>
-        @foreach (var dataModel in Model)
-        {
-            <li>@dataModel.DataModelName</li>
-        }
-    </ul>
-</body>
-</html>
+﻿@using System.Threading.Tasks
+@using ModernDynamicData
+@using ModernDynamicData.ViewModels.DataModel
+@model ListViewModel
+<h1>Data Model liste</h1>
+<ul>
+    @foreach (var dataModel in Model.DataModels)
+    {
+        <li>
+            @Html.RouteLink(dataModel.DataModelName, Constants.Routes.ContextDetail, new {dataModel = dataModel.DataModelName})
+        </li>
+    }
+</ul>

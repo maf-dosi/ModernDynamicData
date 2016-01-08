@@ -12,7 +12,7 @@ namespace Microsoft.Framework.DependencyInjection
 {
     public static class ServiceCollectionExtensions
     {
-        public static void AddDynamicData(this IServiceCollection services)
+        public static void AddDynamicData(this IServiceCollection services, IFileProvider fileProvider = null)
         {
             services.AddMvc();
 
@@ -20,7 +20,7 @@ namespace Microsoft.Framework.DependencyInjection
 
             services.Configure<RazorViewEngineOptions>(options =>
                 options.FileProvider = new ListOfFileProvider(
-                    options.FileProvider,
+                    fileProvider ?? options.FileProvider,
                     new EmbeddedFileProvider(typeof (Guard).GetTypeInfo().Assembly, nameof(ModernDynamicData))
                     )
                 );
