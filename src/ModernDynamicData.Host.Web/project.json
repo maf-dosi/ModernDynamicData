@@ -1,40 +1,23 @@
 {
-    "webroot": "wwwroot",
-    "version": "1.0.0-*",
-
-  "dependencies": {
-    "EntityFramework.MicrosoftSqlServer": "7.0.0-rc1-final",
-    "Microsoft.AspNet.Diagnostics": "1.0.0-rc1-final",
-    "Microsoft.AspNet.Diagnostics.Entity": "7.0.0-rc1-final",
-    "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-final",
-    "Microsoft.AspNet.Mvc": "6.0.0-rc1-final",
-    "Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-rc1-final",
-    "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc1-final",
-    "Microsoft.AspNet.StaticFiles": "1.0.0-rc1-final",
-    "Microsoft.AspNet.Tooling.Razor": "1.0.0-rc1-final",
-    "Microsoft.Extensions.Configuration.Abstractions": "1.0.0-rc1-final",
-    "Microsoft.Extensions.Logging": "1.0.0-rc1-final",
-    "Microsoft.Extensions.Logging.Console": "1.0.0-rc1-final",
-    "Microsoft.Extensions.Logging.Debug": "1.0.0-rc1-final",
-    "Microsoft.VisualStudio.Web.BrowserLink.Loader": "14.0.0-rc1-final",
-    "Microsoft.AspNet.FileProviders.Embedded": "1.0.0-rc1-final",
-    "ModernDynamicData.Abstractions": "1.0.0-*"
-  },
-
     "commands": {
         "web": "Microsoft.AspNet.Server.Kestrel"
     },
-
-    "frameworks": {
-        "dnx451": { },
-        "dnxcore50": { }
+    "dependencies": {
+        "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-final",
+        "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc1-final",
+        "Microsoft.AspNet.FileProviders.Physical": "1.0.0-rc1-final",
+        "ModernDynamicData": "1.0.0-*",
+        "ModernDynamicData.Providers.Fake": "1.0.0-*"
     },
-
     "exclude": [
         "wwwroot",
         "node_modules",
         "bower_components"
     ],
+    "frameworks": {
+        "dnx451": { },
+        "dotnet5.4": { }
+    },
     "publishExclude": [
         "node_modules",
         "bower_components",
@@ -44,5 +27,7 @@
     ],
     "scripts": {
         "prepublish": [ "npm install", "bower install", "gulp clean", "gulp min" ]
-    }
+    },
+    "version": "1.0.0-alpha1",
+    "webroot": "wwwroot"
 }

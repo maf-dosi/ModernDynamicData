@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Collections.ObjectModel;
 using ModernDynamicData.Abstractions.DataProviders;
 
-namespace ModernDynamicData.Samples.Host.Web.DataProvider
+namespace ModernDynamicData.Providers.Fake
 {
     public class FakeDataModelDescriptor : DataModelDescriptor
     {

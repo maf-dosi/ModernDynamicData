@@ -1,56 +1,56 @@
 ﻿{
-  "authors": [ "mgrosperrin" ],
-  "dependencies": {
-    "ModernDynamicData.Abstractions": "",
-    "Microsoft.Extensions.DependencyInjection": "1.0.0-rc1-final",
-    "Microsoft.AspNet.Mvc": "6.0.0-rc1-final",
-    "Microsoft.AspNet.FileProviders.Embedded": "1.0.0-rc1-final",
-    "Microsoft.CSharp": "4.0.1-beta-23516",
-    "System.Collections": "4.0.11-beta-23516",
-    "System.Linq": "4.0.1-beta-23516",
-    "System.Runtime": "4.0.21-beta-23516",
-    "Microsoft.AspNet.StaticFiles": "1.0.0-rc1-final",
-    "Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-rc1-final"
-  },
-  "description": "ModernDynamicData Class Library",
-  "frameworks": {
-    "dnx451": { },
-    "dnxcore50": {
-      "dependencies": {
-      }
-    }
-  },
-  "exclude": [
-    "wwwroot",
-    "node_modules",
-    "bower_components"
-  ],
-  "licenseUrl": "",
-  "projectUrl": "",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/maf-dosi/ModernDynamicData"
-  },
-  "resourceFiles": [
-    "Views/DataModel/Detail.cshtml",
-    "Views/DataModel/List.cshtml",
-    "Views/Shared/_Layout.cshtml",
-    "Views/_ViewImports.cshtml",
-    "Views/_ViewStart.cshtml",
-    "wwwroot/favicon.ico",
-    "wwwroot/fonts/glyphicons-halflings-regular.eot",
-    "wwwroot/fonts/glyphicons-halflings-regular.svg",
-    "wwwroot/fonts/glyphicons-halflings-regular.ttf",
-    "wwwroot/fonts/glyphicons-halflings-regular.woff",
-    "wwwroot/fonts/glyphicons-halflings-regular.woff2",
-    "wwwroot/scripts/bootstrap.js",
-    "wwwroot/scripts/bootstrap.min.js",
-    "wwwroot/scripts/jquery.js",
-    "wwwroot/scripts/jquery.min.js",
-    "wwwroot/styles/site.css",
-    "wwwroot/styles/site.css.map"
-  ],
-  "scripts": { "prebuild": [ "npm install", "gulp build" ] },
-  "tags": [ "" ],
-  "version": "1.0.0-*"
+    "authors": [ "mgrosperrin" ],
+    "dependencies": {
+        "ModernDynamicData.Abstractions": "",
+        "Microsoft.Extensions.DependencyInjection": "1.0.0-rc1-final",
+        "Microsoft.AspNet.Mvc": "6.0.0-rc1-final",
+        "Microsoft.AspNet.FileProviders.Embedded": "1.0.0-rc1-final",
+        "Microsoft.CSharp": "4.0.1-beta-23516",
+        "System.Collections": "4.0.11-beta-23516",
+        "System.Linq": "4.0.1-beta-23516",
+        "System.Runtime": "4.0.21-beta-23516",
+        "Microsoft.AspNet.StaticFiles": "1.0.0-rc1-final",
+        "Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-rc1-final"
+    },
+    "description": "ModernDynamicData - DynamicData with modern technologies",
+    "exclude": [
+        "wwwroot",
+        "node_modules",
+        "bower_components"
+    ],
+    "frameworks": {
+        "dnx451": { },
+        "dotnet5.4": {
+            "dependencies": {
+            }
+        }
+    },
+    "licenseUrl": "",
+    "projectUrl": "",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/maf-dosi/ModernDynamicData"
+    },
+    "resourceFiles": [
+        "Views/DataModel/Detail.cshtml",
+        "Views/DataModel/List.cshtml",
+        "Views/Shared/_Layout.cshtml",
+        "Views/_ViewImports.cshtml",
+        "Views/_ViewStart.cshtml",
+        "wwwroot/favicon.ico",
+        "wwwroot/fonts/glyphicons-halflings-regular.eot",
+        "wwwroot/fonts/glyphicons-halflings-regular.svg",
+        "wwwroot/fonts/glyphicons-halflings-regular.ttf",
+        "wwwroot/fonts/glyphicons-halflings-regular.woff",
+        "wwwroot/fonts/glyphicons-halflings-regular.woff2",
+        "wwwroot/scripts/bootstrap.js",
+        "wwwroot/scripts/bootstrap.min.js",
+        "wwwroot/scripts/jquery.js",
+        "wwwroot/scripts/jquery.min.js",
+        "wwwroot/styles/site.css",
+        "wwwroot/styles/site.css.map"
+    ],
+    "scripts": { "prebuild": [ "npm install", "gulp build" ] },
+    "tags": [ "" ],
+    "version": "1.0.0-alpha1"
 }
