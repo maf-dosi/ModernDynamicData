@@ -1,0 +1,827 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MAF_REFModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="MAF_REFModelStoreContainer">
+    <EntitySet Name="Axe1" EntityType="MAF_REFModel.Store.Axe1" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="Axe2" EntityType="MAF_REFModel.Store.Axe2" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="CategorieCompte" EntityType="MAF_REFModel.Store.CategorieCompte" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="CategorieSage" EntityType="MAF_REFModel.Store.CategorieSage" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="CategorieTypeOuvrage" EntityType="MAF_REFModel.Store.CategorieTypeOuvrage" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="CodePostalVilleSismicite" EntityType="MAF_REFModel.Store.CodePostalVilleSismicite" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="CodeProduitPrincipal" EntityType="MAF_REFModel.Store.CodeProduitPrincipal" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="Departement" EntityType="MAF_REFModel.Store.Departement" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="Espace" EntityType="MAF_REFModel.Store.Espace" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="FamilleMission" EntityType="MAF_REFModel.Store.FamilleMission" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="FormeJuridique" EntityType="MAF_REFModel.Store.FormeJuridique" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="GarantieMinisterielle" EntityType="MAF_REFModel.Store.GarantieMinisterielle" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="GroupeControleTechnique" EntityType="MAF_REFModel.Store.GroupeControleTechnique" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="Image" EntityType="MAF_REFModel.Store.Image" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="JournalComptable" EntityType="MAF_REFModel.Store.JournalComptable" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="MoyenPaiement" EntityType="MAF_REFModel.Store.MoyenPaiement" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="Nationalite" EntityType="MAF_REFModel.Store.Nationalite" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="NatureTravaux" EntityType="MAF_REFModel.Store.NatureTravaux" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="NiveauSismicite" EntityType="MAF_REFModel.Store.NiveauSismicite" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="OperationComptable" EntityType="MAF_REFModel.Store.OperationComptable" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="Pays" EntityType="MAF_REFModel.Store.Pays" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="Police" EntityType="MAF_REFModel.Store.Police" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="PosteComptable" EntityType="MAF_REFModel.Store.PosteComptable" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="Profession" EntityType="MAF_REFModel.Store.Profession" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="QualiteCompte" EntityType="MAF_REFModel.Store.QualiteCompte" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="Region" EntityType="MAF_REFModel.Store.Region" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="RegroupementOperationComptable" EntityType="MAF_REFModel.Store.RegroupementOperationComptable" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="Societe" EntityType="MAF_REFModel.Store.Societe" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="StatutJuridique" EntityType="MAF_REFModel.Store.StatutJuridique" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="TypeCompte" EntityType="MAF_REFModel.Store.TypeCompte" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="TypeConfortementSol" EntityType="MAF_REFModel.Store.TypeConfortementSol" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="TypeControleTechnique" EntityType="MAF_REFModel.Store.TypeControleTechnique" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="TypeEtudeSol" EntityType="MAF_REFModel.Store.TypeEtudeSol" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="TypeFondation" EntityType="MAF_REFModel.Store.TypeFondation" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="TypeFormulaire" EntityType="MAF_REFModel.Store.TypeFormulaire" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="TypeIntervention" EntityType="MAF_REFModel.Store.TypeIntervention" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="TypeLienJuridiqueMoa" EntityType="MAF_REFModel.Store.TypeLienJuridiqueMoa" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="TypeMaitreOuvrage" EntityType="MAF_REFModel.Store.TypeMaitreOuvrage" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="TypeMission" EntityType="MAF_REFModel.Store.TypeMission" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="TypeOperationComptable" EntityType="MAF_REFModel.Store.TypeOperationComptable" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="TypeOuvrage" EntityType="MAF_REFModel.Store.TypeOuvrage" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="TypePersonne" EntityType="MAF_REFModel.Store.TypePersonne" store:Type="Tables" Schema="RefMaf" />
+    <EntitySet Name="TypeUnite" EntityType="MAF_REFModel.Store.TypeUnite" store:Type="Tables" Schema="RefMaf" />
+    <AssociationSet Name="FK_RefMaf_Departement_Region" Association="MAF_REFModel.Store.FK_RefMaf_Departement_Region">
+      <End Role="Region" EntitySet="Region" />
+      <End Role="Departement" EntitySet="Departement" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RefMaf_Espace_Axe1" Association="MAF_REFModel.Store.FK_RefMaf_Espace_Axe1">
+      <End Role="Axe1" EntitySet="Axe1" />
+      <End Role="Espace" EntitySet="Espace" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RefMaf_EvenementComptable_JournalComptable" Association="MAF_REFModel.Store.FK_RefMaf_EvenementComptable_JournalComptable">
+      <End Role="JournalComptable" EntitySet="JournalComptable" />
+      <End Role="TypeOperationComptable" EntitySet="TypeOperationComptable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RefMaf_OperationComptable_CategorieSage" Association="MAF_REFModel.Store.FK_RefMaf_OperationComptable_CategorieSage">
+      <End Role="CategorieSage" EntitySet="CategorieSage" />
+      <End Role="OperationComptable" EntitySet="OperationComptable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RefMaf_OperationComptable_CategorieSage_Annulation" Association="MAF_REFModel.Store.FK_RefMaf_OperationComptable_CategorieSage_Annulation">
+      <End Role="CategorieSage" EntitySet="CategorieSage" />
+      <End Role="OperationComptable" EntitySet="OperationComptable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RefMaf_OperationComptable_GarantieMinisterielle" Association="MAF_REFModel.Store.FK_RefMaf_OperationComptable_GarantieMinisterielle">
+      <End Role="GarantieMinisterielle" EntitySet="GarantieMinisterielle" />
+      <End Role="OperationComptable" EntitySet="OperationComptable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RefMaf_OperationComptable_RegroupementOperationComptable" Association="MAF_REFModel.Store.FK_RefMaf_OperationComptable_RegroupementOperationComptable">
+      <End Role="RegroupementOperationComptable" EntitySet="RegroupementOperationComptable" />
+      <End Role="OperationComptable" EntitySet="OperationComptable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RefMaf_OperationComptable_TypeOperationComptable" Association="MAF_REFModel.Store.FK_RefMaf_OperationComptable_TypeOperationComptable">
+      <End Role="TypeOperationComptable" EntitySet="TypeOperationComptable" />
+      <End Role="OperationComptable" EntitySet="OperationComptable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RefMaf_PosteComptable_Axe1" Association="MAF_REFModel.Store.FK_RefMaf_PosteComptable_Axe1">
+      <End Role="Axe1" EntitySet="Axe1" />
+      <End Role="PosteComptable" EntitySet="PosteComptable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RefMaf_PosteComptable_Axe2" Association="MAF_REFModel.Store.FK_RefMaf_PosteComptable_Axe2">
+      <End Role="Axe2" EntitySet="Axe2" />
+      <End Role="PosteComptable" EntitySet="PosteComptable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RefMaf_PosteComptable_GarantieMinisterielle" Association="MAF_REFModel.Store.FK_RefMaf_PosteComptable_GarantieMinisterielle">
+      <End Role="GarantieMinisterielle" EntitySet="GarantieMinisterielle" />
+      <End Role="PosteComptable" EntitySet="PosteComptable" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RefMaf_Profession_TypePersonne" Association="MAF_REFModel.Store.FK_RefMaf_Profession_TypePersonne">
+      <End Role="TypePersonne" EntitySet="TypePersonne" />
+      <End Role="Profession" EntitySet="Profession" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RefMaf_Societe_Image_Logo" Association="MAF_REFModel.Store.FK_RefMaf_Societe_Image_Logo">
+      <End Role="Image" EntitySet="Image" />
+      <End Role="Societe" EntitySet="Societe" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RefMaf_Societe_Police_Document" Association="MAF_REFModel.Store.FK_RefMaf_Societe_Police_Document">
+      <End Role="Police" EntitySet="Police" />
+      <End Role="Societe" EntitySet="Societe" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RefMaf_Societe_Police_DocumentTitle1" Association="MAF_REFModel.Store.FK_RefMaf_Societe_Police_DocumentTitle1">
+      <End Role="Police" EntitySet="Police" />
+      <End Role="Societe" EntitySet="Societe" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RefMaf_Societe_Police_DocumentTitle2" Association="MAF_REFModel.Store.FK_RefMaf_Societe_Police_DocumentTitle2">
+      <End Role="Police" EntitySet="Police" />
+      <End Role="Societe" EntitySet="Societe" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RefMaf_Societe_Police_DocumentTitle3" Association="MAF_REFModel.Store.FK_RefMaf_Societe_Police_DocumentTitle3">
+      <End Role="Police" EntitySet="Police" />
+      <End Role="Societe" EntitySet="Societe" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RefMaf_Societe_Police_Mail" Association="MAF_REFModel.Store.FK_RefMaf_Societe_Police_Mail">
+      <End Role="Police" EntitySet="Police" />
+      <End Role="Societe" EntitySet="Societe" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RefMaf_TypeCompte_CategorieCompte" Association="MAF_REFModel.Store.FK_RefMaf_TypeCompte_CategorieCompte">
+      <End Role="CategorieCompte" EntitySet="CategorieCompte" />
+      <End Role="TypeCompte" EntitySet="TypeCompte" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RefMaf_TypeCompte_Espace" Association="MAF_REFModel.Store.FK_RefMaf_TypeCompte_Espace">
+      <End Role="Espace" EntitySet="Espace" />
+      <End Role="TypeCompte" EntitySet="TypeCompte" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RefMaf_TypeCompte_QualiteCompte" Association="MAF_REFModel.Store.FK_RefMaf_TypeCompte_QualiteCompte">
+      <End Role="QualiteCompte" EntitySet="QualiteCompte" />
+      <End Role="TypeCompte" EntitySet="TypeCompte" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RefMaf_TypeCompte_Societe" Association="MAF_REFModel.Store.FK_RefMaf_TypeCompte_Societe">
+      <End Role="Societe" EntitySet="Societe" />
+      <End Role="TypeCompte" EntitySet="TypeCompte" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RefMaf_TypeCompte_TypeCompte" Association="MAF_REFModel.Store.FK_RefMaf_TypeCompte_TypeCompte">
+      <End Role="TypeCompte" EntitySet="TypeCompte" />
+      <End Role="TypeCompte1" EntitySet="TypeCompte" />
+    </AssociationSet>
+    <AssociationSet Name="FK_RefMaf_TypeOuvrage_CategorieTypeOuvrage" Association="MAF_REFModel.Store.FK_RefMaf_TypeOuvrage_CategorieTypeOuvrage">
+      <End Role="CategorieTypeOuvrage" EntitySet="CategorieTypeOuvrage" />
+      <End Role="TypeOuvrage" EntitySet="TypeOuvrage" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="Axe1">
+    <Key>
+      <PropertyRef Name="Axe1Id" />
+    </Key>
+    <Property Name="Axe1Id" Type="smallint" Nullable="false" />
+    <Property Name="Code" Type="char" Nullable="false" MaxLength="3" />
+    <Property Name="Description" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Axe2">
+    <Key>
+      <PropertyRef Name="Axe2Id" />
+    </Key>
+    <Property Name="Axe2Id" Type="smallint" Nullable="false" />
+    <Property Name="Libelle" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Code" Type="char" Nullable="false" MaxLength="3" />
+  </EntityType>
+  <EntityType Name="CategorieCompte">
+    <Key>
+      <PropertyRef Name="CategorieCompteId" />
+    </Key>
+    <Property Name="CategorieCompteId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="CategorieSage">
+    <Key>
+      <PropertyRef Name="CategorieSageId" />
+    </Key>
+    <Property Name="CategorieSageId" Type="tinyint" Nullable="false" />
+    <Property Name="Libelle" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="PosteComptable" Type="int" />
+  </EntityType>
+  <EntityType Name="CategorieTypeOuvrage">
+    <Key>
+      <PropertyRef Name="CategorieTypeOuvrageId" />
+    </Key>
+    <Property Name="CategorieTypeOuvrageId" Type="int" Nullable="false" />
+    <Property Name="Libelle" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="CodePostalVilleSismicite">
+    <Key>
+      <PropertyRef Name="CodePostal" />
+      <PropertyRef Name="Ville" />
+    </Key>
+    <Property Name="CodeInsee" Type="char" Nullable="false" MaxLength="5" />
+    <Property Name="CodePostal" Type="char" Nullable="false" MaxLength="5" />
+    <Property Name="Ville" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="SimpleVille" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="NiveauSismiciteID" Type="int" Nullable="false" />
+    <Property Name="Risques" Type="varchar" MaxLength="1000" />
+    <Property Name="DateMAJRisques" Type="datetime" />
+  </EntityType>
+  <EntityType Name="CodeProduitPrincipal">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="Code" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="Libelle" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Departement">
+    <Key>
+      <PropertyRef Name="DepartementId" />
+    </Key>
+    <Property Name="DepartementId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="RegionId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Espace">
+    <Key>
+      <PropertyRef Name="EspaceId" />
+    </Key>
+    <Property Name="EspaceId" Type="int" Nullable="false" />
+    <Property Name="Description" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Code" Type="varchar" MaxLength="10" />
+    <Property Name="Axe1Id" Type="smallint" />
+  </EntityType>
+  <EntityType Name="FamilleMission">
+    <Key>
+      <PropertyRef Name="FamilleMissionId" />
+    </Key>
+    <Property Name="FamilleMissionId" Type="int" Nullable="false" />
+    <Property Name="Libelle" Type="varchar" Nullable="false" MaxLength="150" />
+  </EntityType>
+  <EntityType Name="FormeJuridique">
+    <Key>
+      <PropertyRef Name="FormeJuridiqueId" />
+    </Key>
+    <Property Name="FormeJuridiqueId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Edition" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="GarantieMinisterielle">
+    <Key>
+      <PropertyRef Name="GarantieMinisterielleId" />
+    </Key>
+    <Property Name="GarantieMinisterielleId" Type="int" Nullable="false" />
+    <Property Name="Libelle" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Code" Type="char" Nullable="false" MaxLength="3" />
+  </EntityType>
+  <EntityType Name="GroupeControleTechnique">
+    <Key>
+      <PropertyRef Name="GroupeControleTechniqueId" />
+    </Key>
+    <Property Name="GroupeControleTechniqueId" Type="int" Nullable="false" />
+    <Property Name="Code" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Libelle" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Image">
+    <Key>
+      <PropertyRef Name="ImageId" />
+    </Key>
+    <Property Name="ImageId" Type="int" Nullable="false" />
+    <Property Name="Width" Type="int" Nullable="false" />
+    <Property Name="Height" Type="int" Nullable="false" />
+    <Property Name="Format" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Data" Type="image" Nullable="false" />
+  </EntityType>
+  <EntityType Name="JournalComptable">
+    <Key>
+      <PropertyRef Name="JournalComptableId" />
+    </Key>
+    <Property Name="JournalComptableId" Type="int" Nullable="false" />
+    <Property Name="CodeJournal" Type="char" Nullable="false" MaxLength="2" />
+    <Property Name="Libelle" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="MoyenPaiement">
+    <Key>
+      <PropertyRef Name="MoyenPaiementId" />
+    </Key>
+    <Property Name="MoyenPaiementId" Type="int" Nullable="false" />
+    <Property Name="Description" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="IsEncaissement" Type="bit" />
+    <Property Name="IsFacilitePaiement" Type="bit" />
+    <Property Name="IsRemboursement" Type="bit" />
+    <Property Name="Code" Type="char" MaxLength="3" />
+  </EntityType>
+  <EntityType Name="Nationalite">
+    <Key>
+      <PropertyRef Name="NationaliteId" />
+    </Key>
+    <Property Name="NationaliteId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="NatureTravaux">
+    <Key>
+      <PropertyRef Name="NatureTravauxId" />
+    </Key>
+    <Property Name="NatureTravauxId" Type="int" Nullable="false" />
+    <Property Name="Libelle" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="Code" Type="char" Nullable="false" MaxLength="1" />
+    <Property Name="DateDebut" Type="datetime" Nullable="false" />
+    <Property Name="DateFin" Type="datetime" />
+  </EntityType>
+  <EntityType Name="NiveauSismicite">
+    <Key>
+      <PropertyRef Name="NiveauSismiciteId" />
+    </Key>
+    <Property Name="NiveauSismiciteId" Type="int" Nullable="false" />
+    <Property Name="Code" Type="varchar" Nullable="false" MaxLength="2" />
+    <Property Name="Libelle" Type="varchar" Nullable="false" MaxLength="32" />
+    <Property Name="Ordre" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="OperationComptable">
+    <Key>
+      <PropertyRef Name="OperationComptableId" />
+    </Key>
+    <Property Name="OperationComptableId" Type="int" Nullable="false" />
+    <Property Name="RegroupementOperationComptableId" Type="int" Nullable="false" />
+    <Property Name="Description" Type="varchar" Nullable="false" MaxLength="200" />
+    <Property Name="TypeOperationComptableId" Type="int" />
+    <Property Name="GarantieMinisterielleId" Type="int" />
+    <Property Name="CategorieSageId" Type="tinyint" />
+    <Property Name="CategorieSageAnnulationId" Type="tinyint" />
+    <Property Name="Ordre" Type="smallint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Pays">
+    <Key>
+      <PropertyRef Name="PaysId" />
+    </Key>
+    <Property Name="PaysId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Code" Type="varchar" Nullable="false" MaxLength="3" />
+  </EntityType>
+  <EntityType Name="Police">
+    <Key>
+      <PropertyRef Name="PoliceId" />
+    </Key>
+    <Property Name="PoliceId" Type="int" Nullable="false" />
+    <Property Name="FontName" Type="varchar" Nullable="false" MaxLength="20" />
+    <Property Name="Size" Type="int" Nullable="false" />
+    <Property Name="Color" Type="char" Nullable="false" MaxLength="6" />
+    <Property Name="Description" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="PosteComptable">
+    <Key>
+      <PropertyRef Name="PosteComptableId" />
+    </Key>
+    <Property Name="PosteComptableId" Type="int" Nullable="false" />
+    <Property Name="Libelle" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Axe1Id" Type="smallint" />
+    <Property Name="Axe2Id" Type="smallint" />
+    <Property Name="GarantieMinisterielleId" Type="int" />
+  </EntityType>
+  <EntityType Name="Profession">
+    <Key>
+      <PropertyRef Name="ProfessionId" />
+    </Key>
+    <Property Name="ProfessionId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Formation" Type="bit" Nullable="false" />
+    <Property Name="IsArchitecte" Type="bit" Nullable="false" />
+    <Property Name="TypePersonneId" Type="int" />
+    <Property Name="Edition" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="QualiteCompte">
+    <Key>
+      <PropertyRef Name="QualiteCompteId" />
+    </Key>
+    <Property Name="QualiteCompteId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="100" />
+    <Property Name="CodeActuariat" Type="char" Nullable="false" MaxLength="1" />
+  </EntityType>
+  <EntityType Name="Region">
+    <Key>
+      <PropertyRef Name="RegionId" />
+    </Key>
+    <Property Name="RegionId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="NumeroCROA" Type="int" />
+  </EntityType>
+  <EntityType Name="RegroupementOperationComptable">
+    <Key>
+      <PropertyRef Name="RegroupementOperationComptableId" />
+    </Key>
+    <Property Name="RegroupementOperationComptableId" Type="int" Nullable="false" />
+    <Property Name="Description" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Commentaire" Type="varchar(max)" />
+  </EntityType>
+  <EntityType Name="Societe">
+    <Key>
+      <PropertyRef Name="SocieteId" />
+    </Key>
+    <Property Name="SocieteId" Type="int" Nullable="false" />
+    <Property Name="Nom" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="NomComplet" Type="varchar" MaxLength="100" />
+    <Property Name="IdentifiantCreancierSEPA" Type="varchar" MaxLength="50" />
+    <Property Name="SIREN" Type="char" MaxLength="9" />
+    <Property Name="SIRET" Type="char" MaxLength="14" />
+    <Property Name="PhoneNumber" Type="varchar" MaxLength="30" />
+    <Property Name="FaxNumber" Type="varchar" MaxLength="30" />
+    <Property Name="PostalAddress" Type="nvarchar" MaxLength="150" />
+    <Property Name="MailAddress" Type="varchar" MaxLength="100" />
+    <Property Name="MailAddressName" Type="nvarchar" MaxLength="50" />
+    <Property Name="Website" Type="varchar" MaxLength="50" />
+    <Property Name="LegalNotice" Type="nvarchar" MaxLength="200" />
+    <Property Name="MailPoliceId" Type="int" />
+    <Property Name="DocumentPoliceId" Type="int" />
+    <Property Name="DocumentTitle1PoliceId" Type="int" />
+    <Property Name="DocumentTitle2PoliceId" Type="int" />
+    <Property Name="DocumentTitle3PoliceId" Type="int" />
+    <Property Name="LogoId" Type="int" />
+  </EntityType>
+  <EntityType Name="StatutJuridique">
+    <Key>
+      <PropertyRef Name="StatutJuridiqueId" />
+    </Key>
+    <Property Name="StatutJuridiqueId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="30" />
+    <Property Name="Edition" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TypeCompte">
+    <Key>
+      <PropertyRef Name="TypeCompteId" />
+    </Key>
+    <Property Name="TypeCompteId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="SocieteId" Type="int" Nullable="false" />
+    <Property Name="CategorieCompteId" Type="int" Nullable="false" />
+    <Property Name="CouleurDossier" Type="varchar" Nullable="false" MaxLength="7" />
+    <Property Name="IsActif" Type="bit" Nullable="false" />
+    <Property Name="CanHaveMultipleCompte" Type="bit" Nullable="false" />
+    <Property Name="IsInternational" Type="bit" Nullable="false" />
+    <Property Name="EspaceId" Type="int" />
+    <Property Name="TypeCompteInternationalId" Type="int" />
+    <Property Name="QualiteCompteId" Type="int" />
+  </EntityType>
+  <EntityType Name="TypeConfortementSol">
+    <Key>
+      <PropertyRef Name="TypeConfortementSolId" />
+    </Key>
+    <Property Name="TypeConfortementSolId" Type="int" Nullable="false" />
+    <Property Name="Libelle" Type="varchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="TypeControleTechnique">
+    <Key>
+      <PropertyRef Name="TypeControleTechniqueId" />
+    </Key>
+    <Property Name="TypeControleTechniqueId" Type="int" Nullable="false" />
+    <Property Name="Code" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Libelle" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Description" Type="varchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="TypeEtudeSol">
+    <Key>
+      <PropertyRef Name="TypeEtudeSolId" />
+    </Key>
+    <Property Name="TypeEtudeSolId" Type="int" Nullable="false" />
+    <Property Name="Libelle" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Description" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TypeFondation">
+    <Key>
+      <PropertyRef Name="TypeFondationId" />
+    </Key>
+    <Property Name="TypeFondationId" Type="int" Nullable="false" />
+    <Property Name="Libelle" Type="varchar" Nullable="false" MaxLength="100" />
+  </EntityType>
+  <EntityType Name="TypeFormulaire">
+    <Key>
+      <PropertyRef Name="TypeFormulaireId" />
+    </Key>
+    <Property Name="TypeFormulaireId" Type="int" Nullable="false" />
+    <Property Name="Libelle" Type="varchar" Nullable="false" MaxLength="5" />
+    <Property Name="Description" Type="varchar" Nullable="false" MaxLength="250" />
+  </EntityType>
+  <EntityType Name="TypeIntervention">
+    <Key>
+      <PropertyRef Name="TypeInterventionId" />
+    </Key>
+    <Property Name="TypeInterventionId" Type="int" Nullable="false" />
+    <Property Name="Libelle" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Code" Type="varchar" Nullable="false" MaxLength="3" />
+  </EntityType>
+  <EntityType Name="TypeLienJuridiqueMoa">
+    <Key>
+      <PropertyRef Name="TypeLienJuridiqueMoaId" />
+    </Key>
+    <Property Name="TypeLienJuridiqueMoaId" Type="int" Nullable="false" />
+    <Property Name="Code" Type="varchar" Nullable="false" MaxLength="5" />
+    <Property Name="Libelle" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="IsStrict" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TypeMaitreOuvrage">
+    <Key>
+      <PropertyRef Name="TypeMaitreOuvrageId" />
+    </Key>
+    <Property Name="TypeMaitreOuvrageId" Type="int" Nullable="false" />
+    <Property Name="Libelle" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Code" Type="char" Nullable="false" MaxLength="2" />
+  </EntityType>
+  <EntityType Name="TypeMission">
+    <Key>
+      <PropertyRef Name="TypeMissionId" />
+    </Key>
+    <Property Name="TypeMissionId" Type="int" Nullable="false" />
+    <Property Name="FamilleMissionId" Type="int" />
+    <Property Name="Code" Type="varchar" Nullable="false" MaxLength="10" />
+    <Property Name="Libelle" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Description" Type="varchar" Nullable="false" MaxLength="500" />
+    <Property Name="Ordre" Type="int" />
+    <Property Name="DateDebut" Type="datetime" Nullable="false" />
+    <Property Name="DateFin" Type="datetime" />
+  </EntityType>
+  <EntityType Name="TypeOperationComptable">
+    <Key>
+      <PropertyRef Name="TypeOperationComptableId" />
+    </Key>
+    <Property Name="TypeOperationComptableId" Type="int" Nullable="false" />
+    <Property Name="Libelle" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="JournalComptableId" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="TypeOuvrage">
+    <Key>
+      <PropertyRef Name="TypeOuvrageId" />
+    </Key>
+    <Property Name="TypeOuvrageId" Type="int" Nullable="false" />
+    <Property Name="CategorieTypeOuvrageId" Type="int" Nullable="false" />
+    <Property Name="Libelle" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Code" Type="char" Nullable="false" MaxLength="2" />
+  </EntityType>
+  <EntityType Name="TypePersonne">
+    <Key>
+      <PropertyRef Name="TypePersonneId" />
+    </Key>
+    <Property Name="TypePersonneId" Type="int" Nullable="false" />
+    <Property Name="Name" Type="varchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="TypeUnite">
+    <Key>
+      <PropertyRef Name="Code" />
+    </Key>
+    <Property Name="Code" Type="char" Nullable="false" MaxLength="2" />
+    <Property Name="Libelle" Type="varchar" Nullable="false" MaxLength="50" />
+    <Property Name="Symbole" Type="nvarchar" Nullable="false" MaxLength="5" />
+    <Property Name="Diviseur" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_RefMaf_Departement_Region">
+    <End Role="Region" Type="MAF_REFModel.Store.Region" Multiplicity="1" />
+    <End Role="Departement" Type="MAF_REFModel.Store.Departement" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Region">
+        <PropertyRef Name="RegionId" />
+      </Principal>
+      <Dependent Role="Departement">
+        <PropertyRef Name="RegionId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RefMaf_Espace_Axe1">
+    <End Role="Axe1" Type="MAF_REFModel.Store.Axe1" Multiplicity="0..1" />
+    <End Role="Espace" Type="MAF_REFModel.Store.Espace" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Axe1">
+        <PropertyRef Name="Axe1Id" />
+      </Principal>
+      <Dependent Role="Espace">
+        <PropertyRef Name="Axe1Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RefMaf_EvenementComptable_JournalComptable">
+    <End Role="JournalComptable" Type="MAF_REFModel.Store.JournalComptable" Multiplicity="1" />
+    <End Role="TypeOperationComptable" Type="MAF_REFModel.Store.TypeOperationComptable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="JournalComptable">
+        <PropertyRef Name="JournalComptableId" />
+      </Principal>
+      <Dependent Role="TypeOperationComptable">
+        <PropertyRef Name="JournalComptableId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RefMaf_OperationComptable_CategorieSage">
+    <End Role="CategorieSage" Type="MAF_REFModel.Store.CategorieSage" Multiplicity="0..1" />
+    <End Role="OperationComptable" Type="MAF_REFModel.Store.OperationComptable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CategorieSage">
+        <PropertyRef Name="CategorieSageId" />
+      </Principal>
+      <Dependent Role="OperationComptable">
+        <PropertyRef Name="CategorieSageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RefMaf_OperationComptable_CategorieSage_Annulation">
+    <End Role="CategorieSage" Type="MAF_REFModel.Store.CategorieSage" Multiplicity="0..1" />
+    <End Role="OperationComptable" Type="MAF_REFModel.Store.OperationComptable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CategorieSage">
+        <PropertyRef Name="CategorieSageId" />
+      </Principal>
+      <Dependent Role="OperationComptable">
+        <PropertyRef Name="CategorieSageAnnulationId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RefMaf_OperationComptable_GarantieMinisterielle">
+    <End Role="GarantieMinisterielle" Type="MAF_REFModel.Store.GarantieMinisterielle" Multiplicity="0..1" />
+    <End Role="OperationComptable" Type="MAF_REFModel.Store.OperationComptable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GarantieMinisterielle">
+        <PropertyRef Name="GarantieMinisterielleId" />
+      </Principal>
+      <Dependent Role="OperationComptable">
+        <PropertyRef Name="GarantieMinisterielleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RefMaf_OperationComptable_RegroupementOperationComptable">
+    <End Role="RegroupementOperationComptable" Type="MAF_REFModel.Store.RegroupementOperationComptable" Multiplicity="1" />
+    <End Role="OperationComptable" Type="MAF_REFModel.Store.OperationComptable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="RegroupementOperationComptable">
+        <PropertyRef Name="RegroupementOperationComptableId" />
+      </Principal>
+      <Dependent Role="OperationComptable">
+        <PropertyRef Name="RegroupementOperationComptableId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RefMaf_OperationComptable_TypeOperationComptable">
+    <End Role="TypeOperationComptable" Type="MAF_REFModel.Store.TypeOperationComptable" Multiplicity="0..1" />
+    <End Role="OperationComptable" Type="MAF_REFModel.Store.OperationComptable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TypeOperationComptable">
+        <PropertyRef Name="TypeOperationComptableId" />
+      </Principal>
+      <Dependent Role="OperationComptable">
+        <PropertyRef Name="TypeOperationComptableId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RefMaf_PosteComptable_Axe1">
+    <End Role="Axe1" Type="MAF_REFModel.Store.Axe1" Multiplicity="0..1" />
+    <End Role="PosteComptable" Type="MAF_REFModel.Store.PosteComptable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Axe1">
+        <PropertyRef Name="Axe1Id" />
+      </Principal>
+      <Dependent Role="PosteComptable">
+        <PropertyRef Name="Axe1Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RefMaf_PosteComptable_Axe2">
+    <End Role="Axe2" Type="MAF_REFModel.Store.Axe2" Multiplicity="0..1" />
+    <End Role="PosteComptable" Type="MAF_REFModel.Store.PosteComptable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Axe2">
+        <PropertyRef Name="Axe2Id" />
+      </Principal>
+      <Dependent Role="PosteComptable">
+        <PropertyRef Name="Axe2Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RefMaf_PosteComptable_GarantieMinisterielle">
+    <End Role="GarantieMinisterielle" Type="MAF_REFModel.Store.GarantieMinisterielle" Multiplicity="0..1" />
+    <End Role="PosteComptable" Type="MAF_REFModel.Store.PosteComptable" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="GarantieMinisterielle">
+        <PropertyRef Name="GarantieMinisterielleId" />
+      </Principal>
+      <Dependent Role="PosteComptable">
+        <PropertyRef Name="GarantieMinisterielleId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RefMaf_Profession_TypePersonne">
+    <End Role="TypePersonne" Type="MAF_REFModel.Store.TypePersonne" Multiplicity="0..1" />
+    <End Role="Profession" Type="MAF_REFModel.Store.Profession" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TypePersonne">
+        <PropertyRef Name="TypePersonneId" />
+      </Principal>
+      <Dependent Role="Profession">
+        <PropertyRef Name="TypePersonneId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RefMaf_Societe_Image_Logo">
+    <End Role="Image" Type="MAF_REFModel.Store.Image" Multiplicity="0..1" />
+    <End Role="Societe" Type="MAF_REFModel.Store.Societe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Image">
+        <PropertyRef Name="ImageId" />
+      </Principal>
+      <Dependent Role="Societe">
+        <PropertyRef Name="LogoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RefMaf_Societe_Police_Document">
+    <End Role="Police" Type="MAF_REFModel.Store.Police" Multiplicity="0..1" />
+    <End Role="Societe" Type="MAF_REFModel.Store.Societe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Police">
+        <PropertyRef Name="PoliceId" />
+      </Principal>
+      <Dependent Role="Societe">
+        <PropertyRef Name="DocumentPoliceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RefMaf_Societe_Police_DocumentTitle1">
+    <End Role="Police" Type="MAF_REFModel.Store.Police" Multiplicity="0..1" />
+    <End Role="Societe" Type="MAF_REFModel.Store.Societe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Police">
+        <PropertyRef Name="PoliceId" />
+      </Principal>
+      <Dependent Role="Societe">
+        <PropertyRef Name="DocumentTitle1PoliceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RefMaf_Societe_Police_DocumentTitle2">
+    <End Role="Police" Type="MAF_REFModel.Store.Police" Multiplicity="0..1" />
+    <End Role="Societe" Type="MAF_REFModel.Store.Societe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Police">
+        <PropertyRef Name="PoliceId" />
+      </Principal>
+      <Dependent Role="Societe">
+        <PropertyRef Name="DocumentTitle2PoliceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RefMaf_Societe_Police_DocumentTitle3">
+    <End Role="Police" Type="MAF_REFModel.Store.Police" Multiplicity="0..1" />
+    <End Role="Societe" Type="MAF_REFModel.Store.Societe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Police">
+        <PropertyRef Name="PoliceId" />
+      </Principal>
+      <Dependent Role="Societe">
+        <PropertyRef Name="DocumentTitle3PoliceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RefMaf_Societe_Police_Mail">
+    <End Role="Police" Type="MAF_REFModel.Store.Police" Multiplicity="0..1" />
+    <End Role="Societe" Type="MAF_REFModel.Store.Societe" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Police">
+        <PropertyRef Name="PoliceId" />
+      </Principal>
+      <Dependent Role="Societe">
+        <PropertyRef Name="MailPoliceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RefMaf_TypeCompte_CategorieCompte">
+    <End Role="CategorieCompte" Type="MAF_REFModel.Store.CategorieCompte" Multiplicity="1" />
+    <End Role="TypeCompte" Type="MAF_REFModel.Store.TypeCompte" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CategorieCompte">
+        <PropertyRef Name="CategorieCompteId" />
+      </Principal>
+      <Dependent Role="TypeCompte">
+        <PropertyRef Name="CategorieCompteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RefMaf_TypeCompte_Espace">
+    <End Role="Espace" Type="MAF_REFModel.Store.Espace" Multiplicity="0..1" />
+    <End Role="TypeCompte" Type="MAF_REFModel.Store.TypeCompte" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Espace">
+        <PropertyRef Name="EspaceId" />
+      </Principal>
+      <Dependent Role="TypeCompte">
+        <PropertyRef Name="EspaceId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RefMaf_TypeCompte_QualiteCompte">
+    <End Role="QualiteCompte" Type="MAF_REFModel.Store.QualiteCompte" Multiplicity="0..1" />
+    <End Role="TypeCompte" Type="MAF_REFModel.Store.TypeCompte" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="QualiteCompte">
+        <PropertyRef Name="QualiteCompteId" />
+      </Principal>
+      <Dependent Role="TypeCompte">
+        <PropertyRef Name="QualiteCompteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RefMaf_TypeCompte_Societe">
+    <End Role="Societe" Type="MAF_REFModel.Store.Societe" Multiplicity="1" />
+    <End Role="TypeCompte" Type="MAF_REFModel.Store.TypeCompte" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Societe">
+        <PropertyRef Name="SocieteId" />
+      </Principal>
+      <Dependent Role="TypeCompte">
+        <PropertyRef Name="SocieteId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RefMaf_TypeCompte_TypeCompte">
+    <End Role="TypeCompte" Type="MAF_REFModel.Store.TypeCompte" Multiplicity="0..1" />
+    <End Role="TypeCompte1" Type="MAF_REFModel.Store.TypeCompte" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="TypeCompte">
+        <PropertyRef Name="TypeCompteId" />
+      </Principal>
+      <Dependent Role="TypeCompte1">
+        <PropertyRef Name="TypeCompteInternationalId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_RefMaf_TypeOuvrage_CategorieTypeOuvrage">
+    <End Role="CategorieTypeOuvrage" Type="MAF_REFModel.Store.CategorieTypeOuvrage" Multiplicity="1" />
+    <End Role="TypeOuvrage" Type="MAF_REFModel.Store.TypeOuvrage" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="CategorieTypeOuvrage">
+        <PropertyRef Name="CategorieTypeOuvrageId" />
+      </Principal>
+      <Dependent Role="TypeOuvrage">
+        <PropertyRef Name="CategorieTypeOuvrageId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

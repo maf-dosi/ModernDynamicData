@@ -1,0 +1,442 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MAF_REFModelStoreContainer" CdmEntityContainer="MAF_REFEntities">
+    <EntitySetMapping Name="Axe1">
+      <EntityTypeMapping TypeName="MAF_REFModel.Axe1">
+        <MappingFragment StoreEntitySet="Axe1">
+          <ScalarProperty Name="Axe1Id" ColumnName="Axe1Id" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Axe2">
+      <EntityTypeMapping TypeName="MAF_REFModel.Axe2">
+        <MappingFragment StoreEntitySet="Axe2">
+          <ScalarProperty Name="Axe2Id" ColumnName="Axe2Id" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CategorieCompte">
+      <EntityTypeMapping TypeName="MAF_REFModel.CategorieCompte">
+        <MappingFragment StoreEntitySet="CategorieCompte">
+          <ScalarProperty Name="CategorieCompteId" ColumnName="CategorieCompteId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CategorieSage">
+      <EntityTypeMapping TypeName="MAF_REFModel.CategorieSage">
+        <MappingFragment StoreEntitySet="CategorieSage">
+          <ScalarProperty Name="CategorieSageId" ColumnName="CategorieSageId" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="PosteComptable" ColumnName="PosteComptable" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CategorieTypeOuvrage">
+      <EntityTypeMapping TypeName="MAF_REFModel.CategorieTypeOuvrage">
+        <MappingFragment StoreEntitySet="CategorieTypeOuvrage">
+          <ScalarProperty Name="CategorieTypeOuvrageId" ColumnName="CategorieTypeOuvrageId" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CodePostalVilleSismicite">
+      <EntityTypeMapping TypeName="MAF_REFModel.CodePostalVilleSismicite">
+        <MappingFragment StoreEntitySet="CodePostalVilleSismicite">
+          <ScalarProperty Name="CodeInsee" ColumnName="CodeInsee" />
+          <ScalarProperty Name="CodePostal" ColumnName="CodePostal" />
+          <ScalarProperty Name="Ville" ColumnName="Ville" />
+          <ScalarProperty Name="SimpleVille" ColumnName="SimpleVille" />
+          <ScalarProperty Name="NiveauSismiciteID" ColumnName="NiveauSismiciteID" />
+          <ScalarProperty Name="Risques" ColumnName="Risques" />
+          <ScalarProperty Name="DateMAJRisques" ColumnName="DateMAJRisques" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="CodeProduitPrincipal">
+      <EntityTypeMapping TypeName="MAF_REFModel.CodeProduitPrincipal">
+        <MappingFragment StoreEntitySet="CodeProduitPrincipal">
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Departement">
+      <EntityTypeMapping TypeName="MAF_REFModel.Departement">
+        <MappingFragment StoreEntitySet="Departement">
+          <ScalarProperty Name="DepartementId" ColumnName="DepartementId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Espace">
+      <EntityTypeMapping TypeName="MAF_REFModel.Espace">
+        <MappingFragment StoreEntitySet="Espace">
+          <ScalarProperty Name="EspaceId" ColumnName="EspaceId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Axe1Id" ColumnName="Axe1Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FamilleMission">
+      <EntityTypeMapping TypeName="MAF_REFModel.FamilleMission">
+        <MappingFragment StoreEntitySet="FamilleMission">
+          <ScalarProperty Name="FamilleMissionId" ColumnName="FamilleMissionId" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="FormeJuridique">
+      <EntityTypeMapping TypeName="MAF_REFModel.FormeJuridique">
+        <MappingFragment StoreEntitySet="FormeJuridique">
+          <ScalarProperty Name="FormeJuridiqueId" ColumnName="FormeJuridiqueId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Edition" ColumnName="Edition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GarantieMinisterielle">
+      <EntityTypeMapping TypeName="MAF_REFModel.GarantieMinisterielle">
+        <MappingFragment StoreEntitySet="GarantieMinisterielle">
+          <ScalarProperty Name="GarantieMinisterielleId" ColumnName="GarantieMinisterielleId" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="GroupeControleTechnique">
+      <EntityTypeMapping TypeName="MAF_REFModel.GroupeControleTechnique">
+        <MappingFragment StoreEntitySet="GroupeControleTechnique">
+          <ScalarProperty Name="GroupeControleTechniqueId" ColumnName="GroupeControleTechniqueId" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Image">
+      <EntityTypeMapping TypeName="MAF_REFModel.Image">
+        <MappingFragment StoreEntitySet="Image">
+          <ScalarProperty Name="ImageId" ColumnName="ImageId" />
+          <ScalarProperty Name="Width" ColumnName="Width" />
+          <ScalarProperty Name="Height" ColumnName="Height" />
+          <ScalarProperty Name="Format" ColumnName="Format" />
+          <ScalarProperty Name="Data" ColumnName="Data" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="JournalComptable">
+      <EntityTypeMapping TypeName="MAF_REFModel.JournalComptable">
+        <MappingFragment StoreEntitySet="JournalComptable">
+          <ScalarProperty Name="JournalComptableId" ColumnName="JournalComptableId" />
+          <ScalarProperty Name="CodeJournal" ColumnName="CodeJournal" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MoyenPaiement">
+      <EntityTypeMapping TypeName="MAF_REFModel.MoyenPaiement">
+        <MappingFragment StoreEntitySet="MoyenPaiement">
+          <ScalarProperty Name="MoyenPaiementId" ColumnName="MoyenPaiementId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="IsEncaissement" ColumnName="IsEncaissement" />
+          <ScalarProperty Name="IsFacilitePaiement" ColumnName="IsFacilitePaiement" />
+          <ScalarProperty Name="IsRemboursement" ColumnName="IsRemboursement" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Nationalite">
+      <EntityTypeMapping TypeName="MAF_REFModel.Nationalite">
+        <MappingFragment StoreEntitySet="Nationalite">
+          <ScalarProperty Name="NationaliteId" ColumnName="NationaliteId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NatureTravaux">
+      <EntityTypeMapping TypeName="MAF_REFModel.NatureTravaux">
+        <MappingFragment StoreEntitySet="NatureTravaux">
+          <ScalarProperty Name="NatureTravauxId" ColumnName="NatureTravauxId" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="DateDebut" ColumnName="DateDebut" />
+          <ScalarProperty Name="DateFin" ColumnName="DateFin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="NiveauSismicite">
+      <EntityTypeMapping TypeName="MAF_REFModel.NiveauSismicite">
+        <MappingFragment StoreEntitySet="NiveauSismicite">
+          <ScalarProperty Name="NiveauSismiciteId" ColumnName="NiveauSismiciteId" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="Ordre" ColumnName="Ordre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="OperationComptable">
+      <EntityTypeMapping TypeName="MAF_REFModel.OperationComptable">
+        <MappingFragment StoreEntitySet="OperationComptable">
+          <ScalarProperty Name="OperationComptableId" ColumnName="OperationComptableId" />
+          <ScalarProperty Name="RegroupementOperationComptableId" ColumnName="RegroupementOperationComptableId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="TypeOperationComptableId" ColumnName="TypeOperationComptableId" />
+          <ScalarProperty Name="GarantieMinisterielleId" ColumnName="GarantieMinisterielleId" />
+          <ScalarProperty Name="CategorieSageId" ColumnName="CategorieSageId" />
+          <ScalarProperty Name="CategorieSageAnnulationId" ColumnName="CategorieSageAnnulationId" />
+          <ScalarProperty Name="Ordre" ColumnName="Ordre" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Pays">
+      <EntityTypeMapping TypeName="MAF_REFModel.Pays">
+        <MappingFragment StoreEntitySet="Pays">
+          <ScalarProperty Name="PaysId" ColumnName="PaysId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Police">
+      <EntityTypeMapping TypeName="MAF_REFModel.Police">
+        <MappingFragment StoreEntitySet="Police">
+          <ScalarProperty Name="PoliceId" ColumnName="PoliceId" />
+          <ScalarProperty Name="FontName" ColumnName="FontName" />
+          <ScalarProperty Name="Size" ColumnName="Size" />
+          <ScalarProperty Name="Color" ColumnName="Color" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PosteComptable">
+      <EntityTypeMapping TypeName="MAF_REFModel.PosteComptable">
+        <MappingFragment StoreEntitySet="PosteComptable">
+          <ScalarProperty Name="PosteComptableId" ColumnName="PosteComptableId" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="Axe1Id" ColumnName="Axe1Id" />
+          <ScalarProperty Name="Axe2Id" ColumnName="Axe2Id" />
+          <ScalarProperty Name="GarantieMinisterielleId" ColumnName="GarantieMinisterielleId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Profession">
+      <EntityTypeMapping TypeName="MAF_REFModel.Profession">
+        <MappingFragment StoreEntitySet="Profession">
+          <ScalarProperty Name="ProfessionId" ColumnName="ProfessionId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Formation" ColumnName="Formation" />
+          <ScalarProperty Name="IsArchitecte" ColumnName="IsArchitecte" />
+          <ScalarProperty Name="TypePersonneId" ColumnName="TypePersonneId" />
+          <ScalarProperty Name="Edition" ColumnName="Edition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="QualiteCompte">
+      <EntityTypeMapping TypeName="MAF_REFModel.QualiteCompte">
+        <MappingFragment StoreEntitySet="QualiteCompte">
+          <ScalarProperty Name="QualiteCompteId" ColumnName="QualiteCompteId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="CodeActuariat" ColumnName="CodeActuariat" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Region">
+      <EntityTypeMapping TypeName="MAF_REFModel.Region">
+        <MappingFragment StoreEntitySet="Region">
+          <ScalarProperty Name="RegionId" ColumnName="RegionId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="NumeroCROA" ColumnName="NumeroCROA" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RegroupementOperationComptable">
+      <EntityTypeMapping TypeName="MAF_REFModel.RegroupementOperationComptable">
+        <MappingFragment StoreEntitySet="RegroupementOperationComptable">
+          <ScalarProperty Name="RegroupementOperationComptableId" ColumnName="RegroupementOperationComptableId" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Commentaire" ColumnName="Commentaire" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Societe">
+      <EntityTypeMapping TypeName="MAF_REFModel.Societe">
+        <MappingFragment StoreEntitySet="Societe">
+          <ScalarProperty Name="SocieteId" ColumnName="SocieteId" />
+          <ScalarProperty Name="Nom" ColumnName="Nom" />
+          <ScalarProperty Name="NomComplet" ColumnName="NomComplet" />
+          <ScalarProperty Name="IdentifiantCreancierSEPA" ColumnName="IdentifiantCreancierSEPA" />
+          <ScalarProperty Name="SIREN" ColumnName="SIREN" />
+          <ScalarProperty Name="SIRET" ColumnName="SIRET" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="FaxNumber" ColumnName="FaxNumber" />
+          <ScalarProperty Name="PostalAddress" ColumnName="PostalAddress" />
+          <ScalarProperty Name="MailAddress" ColumnName="MailAddress" />
+          <ScalarProperty Name="MailAddressName" ColumnName="MailAddressName" />
+          <ScalarProperty Name="Website" ColumnName="Website" />
+          <ScalarProperty Name="LegalNotice" ColumnName="LegalNotice" />
+          <ScalarProperty Name="MailPoliceId" ColumnName="MailPoliceId" />
+          <ScalarProperty Name="DocumentPoliceId" ColumnName="DocumentPoliceId" />
+          <ScalarProperty Name="DocumentTitle1PoliceId" ColumnName="DocumentTitle1PoliceId" />
+          <ScalarProperty Name="DocumentTitle2PoliceId" ColumnName="DocumentTitle2PoliceId" />
+          <ScalarProperty Name="DocumentTitle3PoliceId" ColumnName="DocumentTitle3PoliceId" />
+          <ScalarProperty Name="LogoId" ColumnName="LogoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="StatutJuridique">
+      <EntityTypeMapping TypeName="MAF_REFModel.StatutJuridique">
+        <MappingFragment StoreEntitySet="StatutJuridique">
+          <ScalarProperty Name="StatutJuridiqueId" ColumnName="StatutJuridiqueId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Edition" ColumnName="Edition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeCompte">
+      <EntityTypeMapping TypeName="MAF_REFModel.TypeCompte">
+        <MappingFragment StoreEntitySet="TypeCompte">
+          <ScalarProperty Name="TypeCompteId" ColumnName="TypeCompteId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="SocieteId" ColumnName="SocieteId" />
+          <ScalarProperty Name="CategorieCompteId" ColumnName="CategorieCompteId" />
+          <ScalarProperty Name="CouleurDossier" ColumnName="CouleurDossier" />
+          <ScalarProperty Name="IsActif" ColumnName="IsActif" />
+          <ScalarProperty Name="CanHaveMultipleCompte" ColumnName="CanHaveMultipleCompte" />
+          <ScalarProperty Name="IsInternational" ColumnName="IsInternational" />
+          <ScalarProperty Name="EspaceId" ColumnName="EspaceId" />
+          <ScalarProperty Name="TypeCompteInternationalId" ColumnName="TypeCompteInternationalId" />
+          <ScalarProperty Name="QualiteCompteId" ColumnName="QualiteCompteId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeConfortementSol">
+      <EntityTypeMapping TypeName="MAF_REFModel.TypeConfortementSol">
+        <MappingFragment StoreEntitySet="TypeConfortementSol">
+          <ScalarProperty Name="TypeConfortementSolId" ColumnName="TypeConfortementSolId" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeControleTechnique">
+      <EntityTypeMapping TypeName="MAF_REFModel.TypeControleTechnique">
+        <MappingFragment StoreEntitySet="TypeControleTechnique">
+          <ScalarProperty Name="TypeControleTechniqueId" ColumnName="TypeControleTechniqueId" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeEtudeSol">
+      <EntityTypeMapping TypeName="MAF_REFModel.TypeEtudeSol">
+        <MappingFragment StoreEntitySet="TypeEtudeSol">
+          <ScalarProperty Name="TypeEtudeSolId" ColumnName="TypeEtudeSolId" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeFondation">
+      <EntityTypeMapping TypeName="MAF_REFModel.TypeFondation">
+        <MappingFragment StoreEntitySet="TypeFondation">
+          <ScalarProperty Name="TypeFondationId" ColumnName="TypeFondationId" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeFormulaire">
+      <EntityTypeMapping TypeName="MAF_REFModel.TypeFormulaire">
+        <MappingFragment StoreEntitySet="TypeFormulaire">
+          <ScalarProperty Name="TypeFormulaireId" ColumnName="TypeFormulaireId" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeIntervention">
+      <EntityTypeMapping TypeName="MAF_REFModel.TypeIntervention">
+        <MappingFragment StoreEntitySet="TypeIntervention">
+          <ScalarProperty Name="TypeInterventionId" ColumnName="TypeInterventionId" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeLienJuridiqueMoa">
+      <EntityTypeMapping TypeName="MAF_REFModel.TypeLienJuridiqueMoa">
+        <MappingFragment StoreEntitySet="TypeLienJuridiqueMoa">
+          <ScalarProperty Name="TypeLienJuridiqueMoaId" ColumnName="TypeLienJuridiqueMoaId" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="IsStrict" ColumnName="IsStrict" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeMaitreOuvrage">
+      <EntityTypeMapping TypeName="MAF_REFModel.TypeMaitreOuvrage">
+        <MappingFragment StoreEntitySet="TypeMaitreOuvrage">
+          <ScalarProperty Name="TypeMaitreOuvrageId" ColumnName="TypeMaitreOuvrageId" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeMission">
+      <EntityTypeMapping TypeName="MAF_REFModel.TypeMission">
+        <MappingFragment StoreEntitySet="TypeMission">
+          <ScalarProperty Name="TypeMissionId" ColumnName="TypeMissionId" />
+          <ScalarProperty Name="FamilleMissionId" ColumnName="FamilleMissionId" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Ordre" ColumnName="Ordre" />
+          <ScalarProperty Name="DateDebut" ColumnName="DateDebut" />
+          <ScalarProperty Name="DateFin" ColumnName="DateFin" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeOperationComptable">
+      <EntityTypeMapping TypeName="MAF_REFModel.TypeOperationComptable">
+        <MappingFragment StoreEntitySet="TypeOperationComptable">
+          <ScalarProperty Name="TypeOperationComptableId" ColumnName="TypeOperationComptableId" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="JournalComptableId" ColumnName="JournalComptableId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeOuvrage">
+      <EntityTypeMapping TypeName="MAF_REFModel.TypeOuvrage">
+        <MappingFragment StoreEntitySet="TypeOuvrage">
+          <ScalarProperty Name="TypeOuvrageId" ColumnName="TypeOuvrageId" />
+          <ScalarProperty Name="CategorieTypeOuvrageId" ColumnName="CategorieTypeOuvrageId" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypePersonne">
+      <EntityTypeMapping TypeName="MAF_REFModel.TypePersonne">
+        <MappingFragment StoreEntitySet="TypePersonne">
+          <ScalarProperty Name="TypePersonneId" ColumnName="TypePersonneId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TypeUnite">
+      <EntityTypeMapping TypeName="MAF_REFModel.TypeUnite">
+        <MappingFragment StoreEntitySet="TypeUnite">
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Libelle" ColumnName="Libelle" />
+          <ScalarProperty Name="Symbole" ColumnName="Symbole" />
+          <ScalarProperty Name="Diviseur" ColumnName="Diviseur" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

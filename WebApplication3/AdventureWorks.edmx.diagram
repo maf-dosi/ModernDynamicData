@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="350e50672d494c2fa30e55fb52a3ebab" Name="Diagram1" >
+        <EntityTypeShape EntityType="AdventureWorks.Address" Width="1.5" PointX="4.1300079320231493" PointY="12.968733346540823" />
+        <EntityTypeShape EntityType="AdventureWorks.AddressType" Width="1.5" PointX="5.8373397280635961" PointY="27.069621456353747" />
+        <EntityTypeShape EntityType="AdventureWorks.BusinessEntity" Width="1.5" PointX="1.828826806428296" PointY="5.8121796277408393" />
+        <EntityTypeShape EntityType="AdventureWorks.BusinessEntityAddress" Width="1.5" PointX="11.87143285939071" PointY="13.669765299963656" />
+        <EntityTypeShape EntityType="AdventureWorks.BusinessEntityContact" Width="1.5" PointX="5.1233207737669915" PointY="18.680585065242177" />
+        <EntityTypeShape EntityType="AdventureWorks.ContactType" Width="1.5" PointX="11.720358956474978" PointY="23.35857127204471" />
+        <EntityTypeShape EntityType="AdventureWorks.CountryRegion" Width="1.5" PointX="9.3979870161963568" PointY="25.128190886754631" />
+        <EntityTypeShape EntityType="AdventureWorks.EmailAddress" Width="1.5" PointX="4.0913419109263183" PointY="7.7184998279989232" />
+        <EntityTypeShape EntityType="AdventureWorks.Password" Width="1.5" PointX="9.58988824747032" PointY="0.19579020151672427" />
+        <EntityTypeShape EntityType="AdventureWorks.Person" Width="1.5" PointX="0.99971689516665263" PointY="24.376127775933654" />
+        <EntityTypeShape EntityType="AdventureWorks.PersonPhone" Width="1.5" PointX="2.2046638011022766" PointY="29.091795160012225" />
+        <EntityTypeShape EntityType="AdventureWorks.PhoneNumberType" Width="1.5" PointX="5.7543521587524342" PointY="14.22494631177976" />
+        <EntityTypeShape EntityType="AdventureWorks.StateProvince" Width="1.5" PointX="11.25272871705365" PointY="31.008024394050253" />
+        <AssociationConnector Association="AdventureWorks.FK_Address_StateProvince_StateProvinceID" />
+        <AssociationConnector Association="AdventureWorks.FK_BusinessEntityAddress_Address_AddressID" />
+        <AssociationConnector Association="AdventureWorks.FK_BusinessEntityAddress_AddressType_AddressTypeID" />
+        <AssociationConnector Association="AdventureWorks.FK_BusinessEntityAddress_BusinessEntity_BusinessEntityID" />
+        <AssociationConnector Association="AdventureWorks.FK_BusinessEntityContact_BusinessEntity_BusinessEntityID" />
+        <AssociationConnector Association="AdventureWorks.FK_Person_BusinessEntity_BusinessEntityID" />
+        <AssociationConnector Association="AdventureWorks.FK_BusinessEntityContact_ContactType_ContactTypeID" />
+        <AssociationConnector Association="AdventureWorks.FK_BusinessEntityContact_Person_PersonID" />
+        <AssociationConnector Association="AdventureWorks.FK_StateProvince_CountryRegion_CountryRegionCode" />
+        <AssociationConnector Association="AdventureWorks.FK_EmailAddress_Person_BusinessEntityID" />
+        <AssociationConnector Association="AdventureWorks.FK_Password_Person_BusinessEntityID" />
+        <AssociationConnector Association="AdventureWorks.FK_PersonPhone_Person_BusinessEntityID" />
+        <AssociationConnector Association="AdventureWorks.FK_PersonPhone_PhoneNumberType_PhoneNumberTypeID" />
+        <EntityTypeShape EntityType="AdventureWorks.Department" Width="1.5" PointX="7.6929501908332814" PointY="15.59441707264372" />
+        <EntityTypeShape EntityType="AdventureWorks.Employee" Width="1.5" PointX="8.2936247141536441" PointY="12.271331226579534" />
+        <EntityTypeShape EntityType="AdventureWorks.EmployeeDepartmentHistory" Width="1.5" PointX="9.292860700419574" PointY="15.455120749517866" />
+        <EntityTypeShape EntityType="AdventureWorks.EmployeePayHistory" Width="1.5" PointX="1.2463537479035343" PointY="22.972725580899382" />
+        <EntityTypeShape EntityType="AdventureWorks.JobCandidate" Width="1.5" PointX="4.5818989577618892" PointY="31.666564375006857" />
+        <EntityTypeShape EntityType="AdventureWorks.Shift" Width="1.5" PointX="3.6975400669954439" PointY="7.0891388985743458" />
+        <AssociationConnector Association="AdventureWorks.FK_EmployeeDepartmentHistory_Department_DepartmentID" />
+        <AssociationConnector Association="AdventureWorks.FK_Employee_Person_BusinessEntityID" />
+        <AssociationConnector Association="AdventureWorks.FK_EmployeeDepartmentHistory_Employee_BusinessEntityID" />
+        <AssociationConnector Association="AdventureWorks.FK_EmployeePayHistory_Employee_BusinessEntityID" />
+        <AssociationConnector Association="AdventureWorks.FK_JobCandidate_Employee_BusinessEntityID" />
+        <AssociationConnector Association="AdventureWorks.FK_EmployeeDepartmentHistory_Shift_ShiftID" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
