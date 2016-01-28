@@ -7,7 +7,7 @@
     @foreach (var dataModel in Model.DataModels)
     {
         <li>
-            @Html.RouteLink(dataModel.DataModelName, Constants.Routes.ContextDetail, new {dataModel = dataModel.DataModelName})
+            <a asp-route="@Constants.Routes.ContextDetail" asp-route-dataModel="@dataModel.DataModelName">@dataModel.DataModelName</a>
         </li>
     }
 </ul>

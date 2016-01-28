@@ -1,6 +1,6 @@
 ﻿using ModernDynamicData.Abstractions.DataProviders;
 
-namespace ModernDynamicData.Samples.Host.Web.DataProvider
+namespace ModernDynamicData.Providers.Fake
 {
     public class FakeColumnDescriptor : ColumnDescriptor
     {
