@@ -4,15 +4,9 @@
 
 <h1>@Model.DataModel.DataModelName</h1>
 <h2>Table list</h2>
-<table class="table table-hover">
-    <tbody>
+<div class="list-group col-lg-8">
     @foreach (var table in Model.DataModel.Tables)
     {
-        <tr>
-            <td>
-                @table.Name
-            </td>
-        </tr>
+        <a class="list-group-item" asp-route="@Constants.Routes.Table" asp-route-dataModel="@Model.DataModel.DataModelName" asp-route-action="View" asp-route-table="@table.Name">@table.Name</a>
     }
-    </tbody>
-</table>
+</div>

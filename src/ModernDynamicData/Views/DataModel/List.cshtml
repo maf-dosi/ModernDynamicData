@@ -2,12 +2,11 @@
 @using ModernDynamicData
 @using ModernDynamicData.ViewModels.DataModel
 @model ListViewModel
-<h1>Data Model liste</h1>
-<ul>
+<h1>Data Model list</h1>
+<div class="list-group col-lg-4">
     @foreach (var dataModel in Model.DataModels)
     {
-        <li>
-            <a asp-route="@Constants.Routes.ContextDetail" asp-route-dataModel="@dataModel.DataModelName">@dataModel.DataModelName</a>
-        </li>
+            <a asp-route="@Constants.Routes.ContextDetail" asp-route-dataModel="@dataModel.DataModelName" class="list-group-item">
+                    <span class="badge">@dataModel.Tables.Count</span>@dataModel.DataModelName</a>
     }
-</ul>
+</div>
