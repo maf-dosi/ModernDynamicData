@@ -13,10 +13,7 @@ namespace ModernDynamicData.Controllers
         public IActionResult List()
         {
             var dataModels = DataModelDescriptorProvider.GetAllDataModelDescriptors();
-            var viewModel = new ListViewModel
-            {
-                DataModels = dataModels
-            };
+            var viewModel = CreateViewModel<ListViewModel>(vm => vm.DataModels = dataModels);
             return View(viewModel);
         }
 
@@ -24,10 +21,7 @@ namespace ModernDynamicData.Controllers
         {
             var dataModelDescriptor = DataModelDescriptorProvider.GetDataModelDescriptorByName(dataModel);
 
-            var viewModel = new DetailViewModel
-            {
-                DataModel = dataModelDescriptor
-            };
+            var viewModel = CreateViewModel<DetailViewModel>(vm => vm.DataModel = dataModelDescriptor);
             return View(viewModel);
         }
     }

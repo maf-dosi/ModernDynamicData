@@ -1,0 +1,23 @@
+﻿@using ModernDynamicData
+@using ModernDynamicData.ViewModels.Table
+@model ViewViewModel
+
+<h1>@Model.Table.Name</h1>
+<table class="table table-striped">
+    <thead>
+    <tr>
+        @foreach (var column in Model.Table.Columns)
+        {
+            <th>@column.Name</th>
+        }
+    </th>
+    </thead>
+    <tbody>
+    <tr>
+        @foreach (var column in Model.Table.Columns)
+        {
+            <td>Value of @column.Name</td>
+        }
+    </tr>
+    </tbody>
+</table>
