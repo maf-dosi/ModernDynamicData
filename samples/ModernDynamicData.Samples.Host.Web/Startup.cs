@@ -1,5 +1,5 @@
 ﻿using System;
-using Microsoft.AspNet.Builder;
+using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 using ModernDynamicData.Providers.Fake;
 
@@ -16,7 +16,7 @@ namespace ModernDynamicData.Samples.Host.Web
         public void Configure(IApplicationBuilder app, IServiceProvider serviceProvider)
         {
             // Add the platform handler to the request pipeline.
-            app.UseIISPlatformHandler();
+            //app.UseIISPlatformHandler(); // TODO
 
             app.RunDynamicData(serviceProvider, new FakeDataModelDescriptor("Test"),
                 new FakeDataModelDescriptor("Test2"));

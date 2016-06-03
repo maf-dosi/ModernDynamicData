@@ -1,6 +1,6 @@
 ﻿using System.Reflection;
-using Microsoft.AspNet.FileProviders;
-using Microsoft.AspNet.Mvc.Razor;
+using Microsoft.Extensions.FileProviders;
+using Microsoft.AspNetCore.Mvc.Razor;
 using ModernDynamicData;
 using ModernDynamicData.Infrastructure;
 using ModernDynamicData.Providers;
@@ -18,11 +18,14 @@ namespace Microsoft.Extensions.DependencyInjection
             services.AddSingleton<IDataModelDescriptorProvider, DataModelDescriptorProvider>();
 
             services.Configure<RazorViewEngineOptions>(options =>
-                options.FileProvider = new ListOfFileProvider(
-                    fileProvider ?? options.FileProvider,
-                    new EmbeddedFileProvider(typeof (Guard).GetTypeInfo().Assembly, nameof(ModernDynamicData))
-                    )
-                );
+            {
+                if (fileProvider != null)
+                {
+                    options.FileProviders.Add(fileProvider);
+                }
+                options.FileProviders.Add(new EmbeddedFileProvider(typeof(Guard).GetTypeInfo().Assembly,
+                    nameof(ModernDynamicData)));
+            });
         }
     }
 }

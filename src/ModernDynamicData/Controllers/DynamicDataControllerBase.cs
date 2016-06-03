@@ -1,6 +1,6 @@
 ﻿using System;
 using System.Reflection;
-using Microsoft.AspNet.Mvc;
+using Microsoft.AspNetCore.Mvc;
 using ModernDynamicData.Providers;
 using ModernDynamicData.ViewModels;
 

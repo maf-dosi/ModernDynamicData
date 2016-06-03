@@ -1,8 +1,8 @@
 ﻿using System;
 using System.IO;
-using Microsoft.AspNet.Builder;
-using Microsoft.AspNet.FileProviders;
-using Microsoft.AspNet.Hosting;
+using Microsoft.AspNetCore.Builder;
+using Microsoft.Extensions.FileProviders;
+using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.PlatformAbstractions;
@@ -14,9 +14,9 @@ namespace ModernDynamicData.Host.Web
     {
         private readonly string _applicationBasePath;
         private readonly string _wwwrootApplicationBasePath;
-        public Startup(IHostingEnvironment env, IApplicationEnvironment appEnv)
+        public Startup(IHostingEnvironment env)
         {
-            _applicationBasePath = Path.Combine(appEnv.ApplicationBasePath, "..", nameof(ModernDynamicData));
+            _applicationBasePath = Path.Combine(env.ContentRootPath, "..", nameof(ModernDynamicData));
             _wwwrootApplicationBasePath = Path.Combine(_applicationBasePath, "wwwroot");
 
             env.WebRootFileProvider = new PhysicalFileProvider(_wwwrootApplicationBasePath);
@@ -34,7 +34,7 @@ namespace ModernDynamicData.Host.Web
         public void Configure(IApplicationBuilder app, IServiceProvider serviceProvider)
         {
             // Add the platform handler to the request pipeline.
-            app.UseIISPlatformHandler();
+            //app.UseIISPlatformHandler(); // TODO
 
             app.RunDynamicData(serviceProvider, new FakeDataModelDescriptor("Test"),
                 new FakeDataModelDescriptor("Test2"));

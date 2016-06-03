@@ -1,56 +1,70 @@
 ﻿{
     "authors": [ "mgrosperrin" ],
+    "buildOptions": {
+        "preserveCompilationContext": true,
+        "embed": [
+            "Views/**/*.cshtml",
+            "wwwroot/favicon.ico",
+            "wwwroot/fonts/glyphicons-halflings-regular.*",
+            "wwwroot/scripts/bootstrap.js",
+            "wwwroot/scripts/bootstrap.min.js",
+            "wwwroot/scripts/jquery.js",
+            "wwwroot/scripts/jquery.min.js",
+            "wwwroot/styles/site.css",
+            "wwwroot/styles/site.css.map"
+        ]
+    },
     "dependencies": {
-        "ModernDynamicData.Abstractions": "",
-        "Microsoft.Extensions.DependencyInjection": "1.0.0-rc1-final",
-        "Microsoft.AspNet.Mvc": "6.0.0-rc1-final",
-        "Microsoft.AspNet.FileProviders.Embedded": "1.0.0-rc1-final",
-        "Microsoft.CSharp": "4.0.1-beta-23516",
-        "System.Collections": "4.0.11-beta-23516",
-        "System.Linq": "4.0.1-beta-23516",
-        "System.Runtime": "4.0.21-beta-23516",
-        "Microsoft.AspNet.StaticFiles": "1.0.0-rc1-final",
-        "Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-rc1-final"
+        "Microsoft.AspNetCore.Mvc": "1.0.0-rc2-final",
+        "Microsoft.AspNetCore.Mvc.TagHelpers": "1.0.0-rc2-final",
+        "Microsoft.AspNetCore.StaticFiles": "1.0.0-rc2-final",
+        "Microsoft.Extensions.DependencyInjection": "1.0.0-rc2-final",
+        "Microsoft.Extensions.FileProviders.Embedded": "1.0.0-rc2-final",
+        "ModernDynamicData.Abstractions": "1.0.0-*",
+        "NETStandard.Library": "1.5.0-rc2-24027"
     },
     "description": "ModernDynamicData - DynamicData with modern technologies",
-    "exclude": [
-        "wwwroot",
-        "node_modules",
-        "bower_components"
-    ],
     "frameworks": {
-        "dnx451": { },
-        "dotnet5.4": {
-            "dependencies": {
-            }
+        "net461": { },
+        "netstandard1.5": {
+            "imports": "dnxcore50"
         }
     },
-    "licenseUrl": "",
-    "projectUrl": "",
-    "repository": {
-        "type": "git",
-        "url": "git://github.com/maf-dosi/ModernDynamicData"
+    "packOptions": {
+        "repository": {
+            "type": "git",
+            "url": "git://github.com/maf-dosi/ModernDynamicData"
+        },
+        "licenseUrl": "",
+        "projectUrl": "",
+        "tags": [ "" ]
     },
-    "resourceFiles": [
-        "Views/DataModel/Detail.cshtml",
-        "Views/DataModel/List.cshtml",
-        "Views/Shared/_Layout.cshtml",
-        "Views/_ViewImports.cshtml",
-        "Views/_ViewStart.cshtml",
-        "wwwroot/favicon.ico",
-        "wwwroot/fonts/glyphicons-halflings-regular.eot",
-        "wwwroot/fonts/glyphicons-halflings-regular.svg",
-        "wwwroot/fonts/glyphicons-halflings-regular.ttf",
-        "wwwroot/fonts/glyphicons-halflings-regular.woff",
-        "wwwroot/fonts/glyphicons-halflings-regular.woff2",
-        "wwwroot/scripts/bootstrap.js",
-        "wwwroot/scripts/bootstrap.min.js",
-        "wwwroot/scripts/jquery.js",
-        "wwwroot/scripts/jquery.min.js",
-        "wwwroot/styles/site.css",
-        "wwwroot/styles/site.css.map"
-    ],
+    "publishOptions": {
+        "include": [
+            "wwwroot",
+            "Views",
+            "appsettings.json",
+            "web.config"
+        ],
+        "exclude": [
+            "wwwroot",
+            "node_modules",
+            "bower_components"
+        ]
+    },
+    "runtimeOptions": {
+        "gcServer": true
+    },
     "scripts": { "prebuild": [ "npm install", "gulp build" ] },
-    "tags": [ "" ],
+    //"tools": {
+    //    "Microsoft.AspNetCore.Razor.Tools": {
+    //        "version": "1.0.0-preview1-final",
+    //        "imports": "portable-net45+win8+dnxcore50"
+    //    },
+    //    "Microsoft.AspNetCore.Server.IISIntegration.Tools": {
+    //        "version": "1.0.0-preview1-final",
+    //        "imports": "portable-net45+win8+dnxcore50"
+    //    }
+    //},
     "version": "1.0.0-alpha1"
 }

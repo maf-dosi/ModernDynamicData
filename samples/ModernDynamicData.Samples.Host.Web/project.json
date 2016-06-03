@@ -1,22 +1,24 @@
 {
     "commands": {
-        "web": "Microsoft.AspNet.Server.Kestrel"
+        "web": "Microsoft.AspNetCore.Server.Kestrel"
     },
     "dependencies": {
-        "Microsoft.AspNet.IISPlatformHandler": "1.0.0-rc1-final",
-        "Microsoft.AspNet.Mvc.Razor": "6.0.0-rc1-final",
-        "Microsoft.AspNet.Server.Kestrel": "1.0.0-rc1-final",
-        "Microsoft.AspNet.Mvc.TagHelpers": "6.0.0-rc1-final",
+        "Microsoft.AspNetCore.Mvc.Razor": "1.0.0-rc2-final",
+        "Microsoft.AspNetCore.Server.Kestrel": "1.0.0-rc2-final",
+        "Microsoft.AspNetCore.Mvc.TagHelpers": "1.0.0-rc2-final",
         "ModernDynamicData": "1.0.0-*",
-        "ModernDynamicData.Providers.Fake": "1.0.0-*"
+        "ModernDynamicData.Providers.Fake": "1.0.0-*",
+        "NETStandard.Library": "1.5.0-rc2-24027"
     },
     "exclude": [
         "wwwroot",
         "node_modules"
     ],
     "frameworks": {
-        "dnx451": { },
-        "dotnet5.4": { }
+        "net461": { },
+        "netstandard1.5": {
+            "imports": "dnxcore50"
+        }
     },
     "publishExclude": [
         "**.user",
