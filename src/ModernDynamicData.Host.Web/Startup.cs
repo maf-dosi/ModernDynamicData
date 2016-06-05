@@ -29,9 +29,6 @@ namespace ModernDynamicData.Host.Web
         // Configure is called after ConfigureServices is called.
         public void Configure(IApplicationBuilder app, IServiceProvider serviceProvider)
         {
-            // Add the platform handler to the request pipeline.
-            //app.UseIISPlatformHandler(); // TODO
-
             app.RunDynamicData(serviceProvider, new FakeDataModelDescriptor("Test"),
                 new FakeDataModelDescriptor("Test2"));
         }
