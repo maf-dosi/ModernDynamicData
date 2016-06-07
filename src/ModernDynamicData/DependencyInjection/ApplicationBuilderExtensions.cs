@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Linq;
 using System.Reflection;
-using Microsoft.AspNet.StaticFiles;
+using Microsoft.AspNetCore.StaticFiles;
 using ModernDynamicData.Abstractions.DataProviders;
-using Microsoft.AspNet.Hosting;
+using Microsoft.AspNetCore.Hosting;
 using ModernDynamicData.Infrastructure;
-using Microsoft.AspNet.FileProviders;
-using Microsoft.AspNet.Routing;
+using Microsoft.Extensions.FileProviders;
+using Microsoft.AspNetCore.Routing;
 using ModernDynamicData;
 
 // ReSharper disable once CheckNamespace
-namespace Microsoft.AspNet.Builder
+namespace Microsoft.AspNetCore.Builder
 {
     public static class ApplicationBuilderExtensions
     {
